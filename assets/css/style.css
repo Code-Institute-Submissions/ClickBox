@@ -97,13 +97,70 @@
     margin-top: 20px;
     box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
 }
-/*----------------------------Color change buttons ----------------- */
+/*----------------------------Speaker ----------------- */
 .speaker-box {
     background-color: #434343;
-    width: 26vw;
-    height: 65vh;
+    width: 400px;
+    height: 600px;
     position: absolute;   
     z-index: 2;
     top: 25vh;
-    left: 38vw;
+    left: 50%;
+    transform: translate(-50%)
+}
+/*--------------Speaker small --------------- */
+.speaker-small-frame {
+    width: 200px;
+    height: 200px;
+    background-color: #b7b7b7;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    
+
+}
+
+.speaker-small-ring {
+    width: 90%;
+    height: 90%;
+    background-color: #434343;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.speaker-small-color-changer {
+    width: 90%;
+    height: 90%;
+    background-color: #434343;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*--------------Speaker big --------------- */
+.speaker-big-frame {
+    width: 280px;
+    height: 280px;
+    background-color: #b7b7b7;
+    position: absolute;
+    border-radius: 50%;
+    left: 60px;
+    bottom: 25px;
+}
+.speaker-big-ring {
+    width: 90%;
+    height: 90%;
+    background-color: #434343;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
