@@ -10,7 +10,6 @@ $(document).ready(function() {
 
             $("#button").attr('class', 'button');
             $(document.getElementById("background").style.backgroundColor= "#8a8a8aff");
-
         }
         else{
 
@@ -29,7 +28,7 @@ function changeOrange() {
   document.getElementById("background").style.backgroundColor = "orange";
 }
 function changePurple() {
-  document.getElementById("background").style.backgroundColor = "purple";
+  document.getElementById("background").style.backgroundColor = "purple"
 }
 
 

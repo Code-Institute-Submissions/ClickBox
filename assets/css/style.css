@@ -106,8 +106,14 @@
     z-index: 2;
     top: 25vh;
     left: 50%;
-    transform: translate(-50%)
+    transform: translate(-50%);
+    box-shadow: 0px 10px 10px rgb(73, 73, 73);
 }
+
+.speaker-power {
+    
+}
+
 /*--------------Speaker small --------------- */
 .speaker-small-frame {
     width: 200px;
@@ -116,10 +122,9 @@
     position: absolute;
     border-radius: 50%;
     left: 50%;
-    top: 10%;
+    top: 13%;
     transform: translate(-50%);
     
-
 }
 
 .speaker-small-ring {
@@ -131,17 +136,31 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    box-shadow:  0px 0px 10px rgb(73, 73, 73);
 }
 
 .speaker-small-color-changer {
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 95%;
+    background-color: orange;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0px 0px 10px rgb(73, 73, 73);
+}
+
+.speaker-small-center {
+    width: 40%;
+    height: 40%;
     background-color: #434343;
     position: absolute;
     border-radius: 50%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgb(73, 73, 73);
 }
 
 /*--------------Speaker big --------------- */
@@ -151,8 +170,9 @@
     background-color: #b7b7b7;
     position: absolute;
     border-radius: 50%;
-    left: 60px;
-    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
 }
 .speaker-big-ring {
     width: 90%;
@@ -163,4 +183,29 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    box-shadow:  0px 0px 10px rgb(73, 73, 73);
+}
+
+.speaker-big-color-changer {
+    width: 95%;
+    height: 95%;
+    background-color: orange;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0px 0px 10px rgb(73, 73, 73);
+}
+
+.speaker-big-center {
+    width: 45%;
+    height: 45%;
+    background-color: #434343;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgb(73, 73, 73);
 }
