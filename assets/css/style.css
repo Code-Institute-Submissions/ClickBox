@@ -124,8 +124,8 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: gray;
-    border: solid black 2px;
+    background-color: rgb(128, 128, 128, 0.1);
+    border: solid gray 2px;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -167,7 +167,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: inset 0px 0px 10px rgb(73, 73, 73);
+    box-shadow: inset 0px 0px 5px 5px rgb(73, 73, 73);
     transition-duration: 1s;
 }
 
@@ -215,7 +215,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: inset 0px 0px 10px rgb(73, 73, 73);
+    box-shadow: inset 0px 0px 5px 5px rgb(73, 73, 73);
     transition-duration: 1s;
 }
 

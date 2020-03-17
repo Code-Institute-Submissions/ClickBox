@@ -12,7 +12,7 @@ $(document).ready(function() {
             $(document.getElementById("background").style.backgroundColor= "#8a8a8aff");
             $(document.getElementById("speaker-small-color-changer").style.backgroundColor= "#8d8d8d");
             $(document.getElementById("speaker-big-color-changer").style.backgroundColor= "#8d8d8d");
-            $(document.getElementById("speaker-power").style.backgroundColor= "gray");
+            $(document.getElementById("speaker-power").style.borderColor= "gray");
             
         }
         else{
@@ -21,7 +21,7 @@ $(document).ready(function() {
             $(document.getElementById("background").style.backgroundColor= "orange");
             $(document.getElementById("speaker-small-color-changer").style.backgroundColor= "orange");
             $(document.getElementById("speaker-big-color-changer").style.backgroundColor= "orange");
-            $(document.getElementById("speaker-power").style.backgroundColor= "rgb(36, 199, 40)");
+            $(document.getElementById("speaker-power").style.borderColor= "rgb(36, 199, 40)");
         }
         
     });
