@@ -21,7 +21,7 @@ $(document).ready(function() {
             $(document.getElementById("background").style.backgroundColor= "orange");
             $(document.getElementById("speaker-small-color-changer").style.backgroundColor= "orange");
             $(document.getElementById("speaker-big-color-changer").style.backgroundColor= "orange");
-            $(document.getElementById("speaker-power").style.backgroundColor= "rgb(36, 189, 36)");
+            $(document.getElementById("speaker-power").style.backgroundColor= "rgb(36, 199, 40)");
         }
         
     });
