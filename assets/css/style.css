@@ -24,7 +24,7 @@
     height: 55px;
     float: right;
     margin-top: 20px;
-    box-shadow: inset 0px 0px 2px black;
+    box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
     margin-right: 20px;
     border-radius:  50px;
     
@@ -37,7 +37,7 @@
     position: relative;
     top: 49%;
     left: 3px;
-    box-shadow: inset 0px 0px 2px grey;
+    box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
     cursor: pointer;
     background-color: #8a8a8aff;
     transition-duration: 1s;
@@ -45,14 +45,14 @@
 
 }
 
-.button-off{
+.button-on{
     width: 24px;
     height: 24px;
     border-radius: 50px;
     position: relative;
     top: 3px;
     left: 3px;
-    box-shadow: inset 0px 0px 2px grey;
+    box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
     cursor: pointer;
     background-color: orange;
     transition-duration: 1s;
@@ -70,6 +70,7 @@
     float: right;
     margin-right: 20px;
     margin-top: 20px;
+    box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
 }
 
 .changeOrange {
@@ -80,6 +81,7 @@
     float: right;
      margin-right: 20px;
     margin-top: 20px;
+    box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
 }
 
 .changePurple {
@@ -90,4 +92,5 @@
     float: right;
     margin-right: 20px;
     margin-top: 20px;
+    box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
 }

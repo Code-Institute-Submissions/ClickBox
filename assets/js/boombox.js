@@ -6,13 +6,16 @@ $(document).ready(function() {
         
         var classname = $("#button").attr('class');
 
-        if(classname == 'button-off'){
+        if(classname == 'button-on'){
 
             $("#button").attr('class', 'button');
+            $(document.getElementById("background").style.backgroundColor= "#8a8a8aff");
+
         }
         else{
 
-            $("#button").attr('class', 'button-off');
+            $("#button").attr('class', 'button-on');
+            $(document.getElementById("background").style.backgroundColor= "orange");
         }
         
     });
@@ -28,3 +31,5 @@ function changeOrange() {
 function changePurple() {
   document.getElementById("background").style.backgroundColor = "purple";
 }
+
+
