@@ -2,11 +2,14 @@
 #background { 
     background-color: #8a8a8aff;    
     height: 66vh;
+    z-index: 0;
+    position: relative;
 }
 
 .table {
     background-color: #d9d9d9ff;
-    height: 33vh; 
+    height: 34vh; 
+    z-index: 0;
 }
 
     
@@ -93,4 +96,14 @@
     margin-right: 20px;
     margin-top: 20px;
     box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
+}
+/*----------------------------Color change buttons ----------------- */
+.speaker-box {
+    background-color: #434343;
+    width: 26vw;
+    height: 65vh;
+    position: absolute;   
+    z-index: 2;
+    top: 25vh;
+    left: 38vw;
 }
