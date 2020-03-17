@@ -4,6 +4,7 @@
     height: 66vh;
     z-index: 0;
     position: relative;
+    transition-duration: 1s;
 }
 
 .table {
@@ -17,6 +18,7 @@
 
 .background.active {
     background-color: orange;
+    transition-duration: 1s;
 }
 
  /*----------------------------IOS Switch  ----------------- */
@@ -76,9 +78,9 @@
     box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
 }
 
-.changeOrange {
+.changeBlue {
     border-radius: 50%;
-    background-color:orange;
+    background-color:blue;
     height: 25px;
     width: 25px;
     float: right;
@@ -87,9 +89,9 @@
     box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
 }
 
-.changePurple {
+.changeGreen {
     border-radius: 50%;
-    background-color: purple;  
+    background-color: green;  
     height: 25px;
     width: 25px;
     float: right;
@@ -110,15 +112,24 @@
     box-shadow: 0px 10px 10px rgb(73, 73, 73);
 }
 
-.speaker-power {
-    
+#speaker-power {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: gray;
+    border: solid black 2px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    box-shadow: inset 0px 0px 3px black;
+    transition-duration: 1s;
 }
 
 /*--------------Speaker small --------------- */
 .speaker-small-frame {
     width: 200px;
     height: 200px;
-    background-color: #b7b7b7;
+    background-color: #666666;
     position: absolute;
     border-radius: 50%;
     left: 50%;
@@ -139,16 +150,17 @@
     box-shadow:  0px 0px 10px rgb(73, 73, 73);
 }
 
-.speaker-small-color-changer {
+#speaker-small-color-changer {
     width: 95%;
     height: 95%;
-    background-color: orange;
+    background-color: #8d8d8d;
     position: absolute;
     border-radius: 50%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     box-shadow: inset 0px 0px 10px rgb(73, 73, 73);
+    transition-duration: 1s;
 }
 
 .speaker-small-center {
@@ -167,7 +179,7 @@
 .speaker-big-frame {
     width: 280px;
     height: 280px;
-    background-color: #b7b7b7;
+    background-color: #666666;
     position: absolute;
     border-radius: 50%;
     left: 50%;
@@ -186,16 +198,17 @@
     box-shadow:  0px 0px 10px rgb(73, 73, 73);
 }
 
-.speaker-big-color-changer {
+#speaker-big-color-changer {
     width: 95%;
     height: 95%;
-    background-color: orange;
+    background-color: #8d8d8d;
     position: absolute;
     border-radius: 50%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     box-shadow: inset 0px 0px 10px rgb(73, 73, 73);
+    transition-duration: 1s;
 }
 
 .speaker-big-center {

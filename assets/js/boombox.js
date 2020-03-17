@@ -10,11 +10,18 @@ $(document).ready(function() {
 
             $("#button").attr('class', 'button');
             $(document.getElementById("background").style.backgroundColor= "#8a8a8aff");
+            $(document.getElementById("speaker-small-color-changer").style.backgroundColor= "#8d8d8d");
+            $(document.getElementById("speaker-big-color-changer").style.backgroundColor= "#8d8d8d");
+            $(document.getElementById("speaker-power").style.backgroundColor= "gray");
+            
         }
         else{
 
             $("#button").attr('class', 'button-on');
             $(document.getElementById("background").style.backgroundColor= "orange");
+            $(document.getElementById("speaker-small-color-changer").style.backgroundColor= "orange");
+            $(document.getElementById("speaker-big-color-changer").style.backgroundColor= "orange");
+            $(document.getElementById("speaker-power").style.backgroundColor= "rgb(36, 189, 36)");
         }
         
     });
@@ -22,13 +29,20 @@ $(document).ready(function() {
 });
 
 function changeRed() {
-  document.getElementById("background").style.backgroundColor = "red";
+    document.getElementById("background").style.backgroundColor = "red";
+    document.getElementById("speaker-small-color-changer").style.backgroundColor= "red";
+    document.getElementById("speaker-big-color-changer").style.backgroundColor= "red";
+
 }
-function changeOrange() {
-  document.getElementById("background").style.backgroundColor = "orange";
+function changeBlue() {
+    document.getElementById("background").style.backgroundColor = "blue";
+    document.getElementById("speaker-small-color-changer").style.backgroundColor= "blue";
+    document.getElementById("speaker-big-color-changer").style.backgroundColor= "blue";
 }
-function changePurple() {
-  document.getElementById("background").style.backgroundColor = "purple"
+function changeGreen() {
+    document.getElementById("background").style.backgroundColor = "green"
+    document.getElementById("speaker-small-color-changer").style.backgroundColor= "green";
+    document.getElementById("speaker-big-color-changer").style.backgroundColor= "green";
 }
 
 
