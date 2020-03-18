@@ -138,15 +138,29 @@
 	border-right: 25px solid transparent;
 	height: 0;
 	width: 400px;
-    z-index: 2;
+    z-index: 4;
     position: absolute;
     display: block;
     top: 19.8%;
     left: 50%;
     transform-origin: bottom;
-    transform: translate(-50%)
+    transform: translate(-50%);
+    transition-duration: 3s;
 }
 
+.screen-top-zoom {
+    width: 1000px;
+    height: 400px;
+    z-index: 5;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translate(-50%, -50%);
+    background-color:#424242;
+    transition-duration: 3s;
+}
 /*--------------Speaker small --------------- */
 .speaker-small-frame {
     width: 200px;

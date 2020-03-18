@@ -33,7 +33,7 @@ function changeRed() {
     document.getElementById("speaker-small-color-changer").style.backgroundColor= "red";
     document.getElementById("speaker-big-color-changer").style.backgroundColor= "red";
 
-}
+};
 function changeBlue() {
     document.getElementById("background").style.backgroundColor = "blue";
     document.getElementById("speaker-small-color-changer").style.backgroundColor= "blue";
@@ -45,4 +45,7 @@ function changeGreen() {
     document.getElementById("speaker-big-color-changer").style.backgroundColor= "green";
 }
 
+$(document).on('click', '#speaker-top', function() {
+    $(this).addClass('screen-top-zoom').removeClass('screen-top');
+});
 
