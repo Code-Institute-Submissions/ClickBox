@@ -112,9 +112,8 @@
     width: 400px;
     height: 600px;
     position: absolute; 
-    border-radius: 5%;
     z-index: 2;
-    top: 25vh;
+    top: 25%;
     left: 50%;
     transform: translate(-50%);
     box-shadow: inset 0px 0px 40px rgb(32, 32, 32), 0px 0px 40px rgb(32, 32, 32);
@@ -131,6 +130,21 @@
     left: 10px;
     box-shadow: inset 0px 0px 3px black;
     transition-duration: 1s;
+}
+
+.screen-top {
+    border-bottom: 50px solid #424242;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 400px;
+    z-index: 2;
+    position: absolute;
+    display: block;
+    top: 19.8%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translate(-50%)
 }
 
 /*--------------Speaker small --------------- */
