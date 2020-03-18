@@ -1,5 +1,5 @@
 
-
+/*----------------------------IOS Switch Background ----------------- */
 $(document).ready(function() {
     
     $("#button").click(function() {
@@ -27,7 +27,11 @@ $(document).ready(function() {
     });
     
 });
+/*----------------------------IOS Switch Screen ----------------- */
 
+
+
+/*----------------------------IOS Switch Screen ----------------- */
 function changeRed() {
     document.getElementById("background").style.backgroundColor = "red";
     document.getElementById("speaker-small-color-changer").style.backgroundColor= "red";
@@ -44,9 +48,10 @@ function changeGreen() {
     document.getElementById("speaker-small-color-changer").style.backgroundColor= "green";
     document.getElementById("speaker-big-color-changer").style.backgroundColor= "green";
 }
-
+/*----------------------------Screen Zoom Effect ----------------- */
 $(document).on('click', '#speaker-top', function() {
     $(this).addClass('screen-top-zoom').removeClass('screen-top');
+    $(this).children().addClass('inner-screen-area').removeClass('inner-screen-area-hide');
     $(this).siblings().addClass('speaker-box-hide').removeClass('speaker-box-show');
     
 });

@@ -21,7 +21,7 @@
     transition-duration: 1s;
 }
 
- /*----------------------------IOS Switch  ----------------- */
+ /*----------------------------IOS Switch background ----------------- */
 
 .light-switch-bg {
     background-color: #d9d9d9ff;
@@ -72,6 +72,10 @@
 .button-on:hover {
     background-color: #8a8a8aff;
 }
+/*----------------------------IOS Switch Top screen  ----------------- */
+
+
+
 /*----------------------------Color change buttons ----------------- */
 
 .changeRed {
@@ -147,7 +151,7 @@
     box-shadow: inset 0px 0px 3px black;
     transition-duration: 1s;
 }
-
+/*-------------Screen ----------- */
 .screen-top {
     border-bottom: 50px solid #424242;
 	border-left: 25px solid transparent;
@@ -175,7 +179,20 @@
     transform-origin: bottom;
     transform: translate(-50%, -50%);
     background-color:#424242;
-    transition-duration: 3s;
+    transition-duration: 2s;
+}
+.inner-screen-area {
+    width: 90%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform-origin: bottom;
+    transform: translate(-50%, -50%);
+    background-color: red;
+}
+.touch-screen {
+    width
 }
 /*--------------Speaker small --------------- */
 .speaker-small-frame {
