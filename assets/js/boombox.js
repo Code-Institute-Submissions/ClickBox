@@ -47,5 +47,7 @@ function changeGreen() {
 
 $(document).on('click', '#speaker-top', function() {
     $(this).addClass('screen-top-zoom').removeClass('screen-top');
+    $(this).siblings().addClass('speaker-box-hide').removeClass('speaker-box-show');
+    
 });
 

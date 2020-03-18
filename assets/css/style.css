@@ -107,7 +107,7 @@
     box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
 }
 /*----------------------------Speaker ----------------- */
-.speaker-box {
+.speaker-box-show {
     background-color: #434343;
     width: 400px;
     height: 600px;
@@ -118,6 +118,22 @@
     transform: translate(-50%);
     box-shadow: inset 0px 0px 40px rgb(32, 32, 32), 0px 0px 40px rgb(32, 32, 32);
 }
+
+.speaker-box-hide {
+    background-color: #434343;
+    width: 400px;
+    height: 600px;
+    position: absolute; 
+    z-index: 2;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: inset 0px 0px 40px rgb(32, 32, 32), 0px 0px 40px rgb(32, 32, 32);
+    display: none;
+    transition-duration: 3s;
+}
+
+
 
 #speaker-power {
     width: 15px;
@@ -149,8 +165,8 @@
 }
 
 .screen-top-zoom {
-    width: 1000px;
-    height: 400px;
+    width: 1010px;
+    height: 500px;
     z-index: 5;
     position: absolute;
     display: block;
