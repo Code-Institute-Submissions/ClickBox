@@ -14,8 +14,8 @@ $(document).ready(function() {
             $(document.getElementById("speaker-big-color-changer").style.backgroundColor= "#8d8d8d");
             $(document.getElementById("speaker-power").style.borderColor= "gray");
             
-        }--
-        else{
+        }
+        else {
 
             $("#button").attr('class', 'button-on');
             $(document.getElementById("background").style.backgroundColor= "orange");

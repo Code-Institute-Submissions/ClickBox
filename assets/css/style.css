@@ -206,15 +206,15 @@
  /*------IOS Switch screen ------- */
 
 .light-switch-screen {
-    width: 10%;
-    height: 55px;
-    top: 50%;
-    right:0%;
+    width: 5%;
+    padding-top: 10%;
+    z-index: 1;
     position: absolute;
-    transform-origin: bottom;
-    transform: translate(-50%);
-    background-color: black;
-    box-shadow: inset 0px 0px 3px 0px rgb(109, 108, 108), 0px 0px 1px 0px rgb(109, 108, 108);
+    display: block;
+    right: 0%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#424242;
     
 }
 /*--------------Speaker small --------------- */
@@ -224,9 +224,10 @@
     background-color: #2c2c2c;
     position: absolute;
     border-radius: 50%;
+    transform-origin: top;
     left: 50%;
     top: 13%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
     
 }
 
