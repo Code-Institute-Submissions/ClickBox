@@ -43,6 +43,7 @@ $(document).ready(function() {
             $(document.getElementById("volume-bar").style.backgroundColor= "#8a8a8aff");
             $("#screen-top-up").attr('class', 'screen-top-up');
             $("#screen-bottom-up").attr('class', 'screen-bottom-up');
+            
         }
         else {
 
@@ -52,6 +53,7 @@ $(document).ready(function() {
             $(document.getElementById("volume-bar").style.backgroundColor= "orange");
             $("#screen-top-up").attr('class', 'screen-top-down');
             $("#screen-bottom-up").attr('class', 'screen-bottom-down');
+            $(document.getElementById("welcome").style.color = "orange");
         }   
         
     });
@@ -66,6 +68,8 @@ function changeRed() {
     document.getElementById("speaker-small-color-changer").style.backgroundColor= "red";
     document.getElementById("speaker-big-color-changer").style.backgroundColor= "red";
     document.getElementById("volume-bar").style.backgroundColor= "red";
+    document.getElementById("volume-bar").style.backgroundColor= "red";
+    document.getElementById("welcome").style.color = "red";
 
 };
 function changeBlue() {
@@ -74,6 +78,7 @@ function changeBlue() {
     document.getElementById("speaker-small-color-changer").style.backgroundColor= "blue";
     document.getElementById("speaker-big-color-changer").style.backgroundColor= "blue";
     document.getElementById("volume-bar").style.backgroundColor= "blue";
+    document.getElementById("welcome").style.color = "blue";
 }
 function changeGreen() {
     document.getElementById("background").style.backgroundColor = "green"
@@ -81,6 +86,7 @@ function changeGreen() {
     document.getElementById("speaker-small-color-changer").style.backgroundColor= "green";
     document.getElementById("speaker-big-color-changer").style.backgroundColor= "green";
     document.getElementById("volume-bar").style.backgroundColor= "green";
+    document.getElementById("welcome").style.color = "green";
 }
 /*----------------------------Screen Zoom Effect ----------------- */
 $(document).on('click', '#speaker-top', function() {
@@ -89,7 +95,7 @@ $(document).on('click', '#speaker-top', function() {
     $(this).find('#volume-box').addClass('volume-box').removeClass('volume-box-hide');
     $(this).children().addClass('inner-screen-area').removeClass('inner-screen-area-hide');
     $(this).siblings().addClass('speaker-box-hide').removeClass('speaker-box-show');
-    $(this).find('#welcome').removeClass('welcome-hide').addClass('welcome-show');
+    $(this).find('.welcome-hide').removeClass('welcome-hide').addClass('welcome-show');
     
     
 });
@@ -99,6 +105,7 @@ $(document).on('click', '#background', function() {
     $('#speaker-top').removeClass('screen-top-zoom').addClass('screen-top');
     $('#speaker-box').removeClass('speaker-box-hide').addClass('speaker-box-show');
     $('#volume-box').addClass('volume-box-hide').removeClass('volume-box');
-    $('#welcome').removeClass('welcome-show').addClass('welcome-hide');
+    $('.welcome-show').removeClass('welcome-show').addClass('welcome-hide');
 });
 
+/*---------------------------- audio ----------------- */
