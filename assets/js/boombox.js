@@ -28,7 +28,26 @@ $(document).ready(function() {
     
 });
 /*----------------------------IOS Switch Screen ----------------- */
+$(document).ready(function() {
+    
+    $("#screen-button").click(function() {
+        
+        var classname = $("#screen-button").attr('class');
 
+        if(classname == 'screen-button-on'){
+
+            $("#screen-button").attr('class', 'screen-button');
+           
+        }
+        else {
+
+            $("#screen-button").attr('class', 'screen-button-on');
+           
+        }
+        
+    });
+    
+});
 
 
 /*----------------------------IOS Switch Screen ----------------- */
@@ -52,6 +71,7 @@ function changeGreen() {
 $(document).on('click', '#speaker-top', function() {
     $(this).addClass('screen-top-zoom').removeClass('screen-top');
     $(this).find('#screen-switch').addClass('light-switch-screen-bg').removeClass('light-switch-screen-hide');
+    $(this).find('#volume-box').addClass('volume-box').removeClass('volume-box-hide');
     $(this).children().addClass('inner-screen-area').removeClass('inner-screen-area-hide');
     $(this).siblings().addClass('speaker-box-hide').removeClass('speaker-box-show');
     

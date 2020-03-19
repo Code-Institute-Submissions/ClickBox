@@ -41,7 +41,7 @@
     position: relative;
     top: 49%;
     left: 3px;
-    box-shadow: inset 0px 0px 5px 0px rgb(109, 108, 108), 0px 0px 5px 0px rgb(109, 108, 108);
+    box-shadow: inset 0px 0px 3px 0px rgb(109, 108, 108), 0px 0px 3px 0px rgb(109, 108, 108);
     cursor: pointer;
     background-color: #8a8a8aff;
     transition-duration: 1s;
@@ -56,7 +56,7 @@
     position: relative;
     top: 3px;
     left: 3px;
-    box-shadow: inset 0px 0px 5px 0px rgb(109, 108, 108), 0px 0px 5px 0px rgb(109, 108, 108);
+    box-shadow: inset 0px 0px 3px 0px rgb(109, 108, 108), 0px 0px 3px 0px rgb(109, 108, 108);
     cursor: pointer;
     background-color: orange;
     transition-duration: 1s;
@@ -71,43 +71,7 @@
 .button-on:hover {
     background-color: #8a8a8aff;
 }
- /*------IOS Switch for Screen ------- */
-
-.light-switch-screen-bg {
-    width: 5%;
-    padding-top: 7%;
-    z-index: 1;
-    position: absolute;
-    right: 1px;
-    top: 50%;
-    transform: translate(0%, -50%);
-    background-color:#d9d9d9ff;
-    transition-duration: 2s; 
-    border-radius: 50px;
-    box-shadow: inset 0px 0px 3px 0px rgb(109, 108, 108), 0px 0px 1px 0px rgb(109, 108, 108);
-}
-
-.light-switch-screen-hide {
-    display: none;
-}
-
-.screen-button {
-    
-    
-
-}
-
-.screen-button-on{
-
-}
-
-.screen-button:hover {
-    background-color: orange;
-}
-
-.screen-button-on:hover {
-    background-color: #8a8a8aff;
-}
+ 
 /*----------------------------Color change buttons ----------------- */
 
 .changeRed {
@@ -119,6 +83,7 @@
     margin-right: 20px;
     margin-top: 20px;
     box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
+    cursor: pointer;
 }
 
 .changeBlue {
@@ -130,6 +95,7 @@
      margin-right: 20px;
     margin-top: 20px;
     box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
+    cursor: pointer;
 }
 
 .changeGreen {
@@ -141,6 +107,7 @@
     margin-right: 20px;
     margin-top: 20px;
     box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
+    cursor: pointer;
 }
 /*----------------------------Speaker ----------------- */
 .speaker-box-show {
@@ -218,7 +185,7 @@
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    background-color: orange;
+    background-color:#424242;
     transition-duration: 2s;
 }
 .touch-screen {
@@ -232,9 +199,111 @@
     transition-duration: 2s;
     background-color: #d9d9d9;
 }
+/*------IOS Switch for Screen ------- */
 
+.light-switch-screen-bg {
+    width: 5%;
+    height: 25%;
+    z-index: 1;
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background-color:#d9d9d9ff;
+    transition-duration: 2s; 
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 3px 0px rgb(109, 108, 108), 0px 0px 1px 0px rgb(109, 108, 108);
+}
 
-/*--------------Speaker small --------------- */
+.light-switch-screen-hide {
+    display: none;
+}
+
+.screen-button {
+    width: 85%;
+    height: 39%;
+    border-radius: 50px;
+    position: relative;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: inset 0px 0px 3px 0px rgb(109, 108, 108), 0px 0px 3px 0px rgb(109, 108, 108);
+    cursor: pointer;
+    background-color: #8a8a8aff;
+    transition-duration: 1s;
+}
+
+.screen-button-on{
+    width: 85%;
+    height: 39%;
+    border-radius: 50px;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: inset 0px 0px 3px 0px rgb(109, 108, 108), 0px 0px 3px 0px rgb(109, 108, 108);
+    cursor: pointer;
+    background-color: orange;
+    transition-duration: 1s;
+}
+
+.screen-button:hover {
+    background-color: orange;
+}
+
+.screen-button-on:hover {
+    background-color: #8a8a8aff;
+}
+/*--------------Volume Area --------------- */
+.volume-box {
+    height: 85%;
+    width: 5%;
+    background-color: #424242;
+    top: 50%;
+    transform: translate(0, -50%);
+    position: absolute;
+
+}
+.volume-box-hide {
+    display: none;
+
+}
+
+.fa-plus-circle {
+    position: absolute;
+    color: #8a8a8aff;
+    border-color: black;
+    font-size: 2.5vw;
+    left: 50%;
+    transform: translate(-50%);
+    top:1px;
+    transition-duration: 1s;
+    cursor: pointer;
+    
+}
+
+.fa-minus-circle {
+    position: absolute;
+    color: #8a8a8aff;
+    border-color: black;
+    font-size: 2.5vw;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 1px;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.fa-minus-circle:hover {
+    color: orange;
+    transition-duration: 1s;
+}
+
+.fa-plus-circle:hover {
+    color: orange;
+    transition-duration: 1s;
+}
+/*-------------------------Speaker small ------------------------- */
 .speaker-small-frame {
     width: 200px;
     height: 200px;
