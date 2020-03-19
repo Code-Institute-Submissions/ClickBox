@@ -21,7 +21,8 @@ $(document).ready(function() {
             $(document.getElementById("background").style.backgroundColor= "orange");
             $(document.getElementById("speaker-small-color-changer").style.backgroundColor= "orange");
             $(document.getElementById("speaker-big-color-changer").style.backgroundColor= "orange");
-            $(document.getElementById("speaker-power").style.borderColor= "rgb(36, 199, 40)");
+            $(document.getElementById("speaker-power").style.borderColor= "orange");
+            
         }
         
     });
@@ -37,12 +38,13 @@ $(document).ready(function() {
         if(classname == 'screen-button-on'){
 
             $("#screen-button").attr('class', 'screen-button');
-           
+            $(document.getElementById("volume-box").style.borderColor= "#8a8a8aff");
+            $(document.getElementById("volume-box").style.borderColor= "#8a8a8aff");
         }
         else {
 
             $("#screen-button").attr('class', 'screen-button-on');
-           
+            $(document.getElementById("volume-box").style.borderColor= "orange");
         }
         
     });
