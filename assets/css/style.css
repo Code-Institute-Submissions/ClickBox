@@ -120,20 +120,11 @@
     left: 50%;
     transform: translate(-50%);
     box-shadow: inset 0px 0px 40px rgb(32, 32, 32), 0px 0px 40px rgb(32, 32, 32);
+    transition-duration: 2s;
 }
 
 .speaker-box-hide {
-    background-color: #434343;
-    width: 400px;
-    height: 600px;
-    position: absolute; 
-    z-index: 2;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%);
-    box-shadow: inset 0px 0px 40px rgb(32, 32, 32), 0px 0px 40px rgb(32, 32, 32);
     display: none;
-    transition-duration: 3s;
 }
 
 
@@ -209,10 +200,24 @@
     right: 1px;
     top: 50%;
     transform: translate(0%, -50%);
-    background-color:#d9d9d9ff;
-    transition-duration: 2s; 
+    background-color:#8a8a8aff;
+    transition-duration: 1s; 
     border-radius: 50px;
-    box-shadow: inset 0px 0px 3px 0px rgb(109, 108, 108), 0px 0px 1px 0px rgb(109, 108, 108);
+    box-shadow: inset 0px 0px 3px 0px rgb(56, 56, 56), 0px 0px 1px 0px rgb(56, 56, 56);
+}
+
+.light-switch-screen-bg-on {
+    width: 5%;
+    height: 25%;
+    z-index: 1;
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background-color: orange;
+    transition-duration: 1s;
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 3px 0px rgb(88, 88, 88), 0px 0px 1px 0px  rgb(88, 88, 88);
 }
 
 .light-switch-screen-hide {
@@ -229,7 +234,7 @@
     transform: translate(-50%);
     box-shadow: inset 0px 0px 3px 0px rgb(109, 108, 108), 0px 0px 3px 0px rgb(109, 108, 108);
     cursor: pointer;
-    background-color: #8a8a8aff;
+    background-color: #d9d9d9ff;
     transition-duration: 1s;
 }
 
@@ -243,27 +248,20 @@
     transform: translate(-50%);
     box-shadow: inset 0px 0px 3px 0px rgb(109, 108, 108), 0px 0px 3px 0px rgb(109, 108, 108);
     cursor: pointer;
-    background-color: orange;
+    background-color: #d9d9d9ff;
     transition-duration: 1s;
 }
 
-.screen-button:hover {
-    background-color: orange;
-}
-
-.screen-button-on:hover {
-    background-color: #8a8a8aff;
-}
 /*--------------Volume Area --------------- */
 #volume-box {
     height: 85%;
     width: 5%;
-    border: solid 1px #8a8a8aff;
+    border: solid 2px #8a8a8aff;
     top: 50%;
     border-radius: 50px;
     transform: translate(0, -50%);
     position: absolute;
-
+    transition-duration: 1s;
 }
 .volume-box-hide {
     display: none;

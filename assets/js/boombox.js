@@ -21,7 +21,7 @@ $(document).ready(function() {
             $(document.getElementById("background").style.backgroundColor= "orange");
             $(document.getElementById("speaker-small-color-changer").style.backgroundColor= "orange");
             $(document.getElementById("speaker-big-color-changer").style.backgroundColor= "orange");
-            $(document.getElementById("speaker-power").style.borderColor= "orange");
+            $(document.getElementById("speaker-power").style.borderColor= "#00ff00");
             
         }
         
@@ -38,12 +38,13 @@ $(document).ready(function() {
         if(classname == 'screen-button-on'){
 
             $("#screen-button").attr('class', 'screen-button');
-            $(document.getElementById("volume-box").style.borderColor= "#8a8a8aff");
+            $("#screen-switch").attr('class', 'light-switch-screen-bg');
             $(document.getElementById("volume-box").style.borderColor= "#8a8a8aff");
         }
         else {
 
             $("#screen-button").attr('class', 'screen-button-on');
+            $("#screen-switch").attr('class', 'light-switch-screen-bg-on');
             $(document.getElementById("volume-box").style.borderColor= "orange");
         }
         
@@ -55,17 +56,21 @@ $(document).ready(function() {
 /*----------------------------IOS Switch Screen ----------------- */
 function changeRed() {
     document.getElementById("background").style.backgroundColor = "red";
+    document.getElementById("volume-box").style.borderColor= "red";
     document.getElementById("speaker-small-color-changer").style.backgroundColor= "red";
     document.getElementById("speaker-big-color-changer").style.backgroundColor= "red";
+   
 
 };
 function changeBlue() {
     document.getElementById("background").style.backgroundColor = "blue";
+    document.getElementById("volume-box").style.borderColor= "blue";
     document.getElementById("speaker-small-color-changer").style.backgroundColor= "blue";
     document.getElementById("speaker-big-color-changer").style.backgroundColor= "blue";
 }
 function changeGreen() {
     document.getElementById("background").style.backgroundColor = "green"
+    document.getElementById("volume-box").style.borderColor= "green";
     document.getElementById("speaker-small-color-changer").style.backgroundColor= "green";
     document.getElementById("speaker-big-color-changer").style.backgroundColor= "green";
 }
@@ -80,3 +85,9 @@ $(document).on('click', '#speaker-top', function() {
     
 });
 
+/*----------------------------Screen Zoom out ----------------- */
+$(document).on('click', '#background', function() {
+    $('#speaker-top').removeClass('screen-top-zoom').addClass('screen-top');
+    $('#speaker-box').removeClass('speaker-box-hide').addClass('speaker-box-show');
+    $('#volume-box').addClass('volume-box-hide').removeClass('volume-box');
+});
