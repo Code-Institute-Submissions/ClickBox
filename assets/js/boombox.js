@@ -51,8 +51,10 @@ function changeGreen() {
 /*----------------------------Screen Zoom Effect ----------------- */
 $(document).on('click', '#speaker-top', function() {
     $(this).addClass('screen-top-zoom').removeClass('screen-top');
+    $(this).find('#screen-switch').addClass('light-switch-screen-bg').removeClass('light-switch-screen-hide');
     $(this).children().addClass('inner-screen-area').removeClass('inner-screen-area-hide');
     $(this).siblings().addClass('speaker-box-hide').removeClass('speaker-box-show');
+    
     
 });
 

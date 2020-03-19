@@ -32,7 +32,6 @@
     box-shadow: inset 0px 0px 3px 0px rgb(109, 108, 108), 0px 0px 1px 0px rgb(109, 108, 108);
     margin-right: 20px;
     border-radius:  50px;
-    
 }
 
 .button {
@@ -72,10 +71,43 @@
 .button-on:hover {
     background-color: #8a8a8aff;
 }
-/*----------------------------IOS Switch Top screen  ----------------- */
+ /*------IOS Switch for Screen ------- */
 
+.light-switch-screen-bg {
+    width: 5%;
+    padding-top: 7%;
+    z-index: 1;
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background-color:#d9d9d9ff;
+    transition-duration: 2s; 
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 3px 0px rgb(109, 108, 108), 0px 0px 1px 0px rgb(109, 108, 108);
+}
 
+.light-switch-screen-hide {
+    display: none;
+}
 
+.screen-button {
+    
+    
+
+}
+
+.screen-button-on{
+
+}
+
+.screen-button:hover {
+    background-color: orange;
+}
+
+.screen-button-on:hover {
+    background-color: #8a8a8aff;
+}
 /*----------------------------Color change buttons ----------------- */
 
 .changeRed {
@@ -173,10 +205,8 @@
     padding-top: 35%;
     z-index: 5;
     position: absolute;
-    display: block;
     top: 50%;
     left: 50%;
-    transform-origin: bottom;
     transform: translate(-50%, -50%);
     background-color:#424242;
     transition-duration: 2s;
@@ -187,9 +217,9 @@
     top: 50%;
     left: 50%;
     position: absolute;
-    transform-origin: bottom;
     transform: translate(-50%, -50%);
     background-color: orange;
+    transition-duration: 2s;
 }
 .touch-screen {
     width: 80%;
@@ -199,24 +229,11 @@
     position: absolute;
     transform-origin: bottom;
     transform: translate(-50%, -50%);
-
+    transition-duration: 2s;
     background-color: #d9d9d9;
 }
 
- /*------IOS Switch screen ------- */
 
-.light-switch-screen {
-    width: 5%;
-    padding-top: 10%;
-    z-index: 1;
-    position: absolute;
-    display: block;
-    right: 0%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color:#424242;
-    
-}
 /*--------------Speaker small --------------- */
 .speaker-small-frame {
     width: 200px;
