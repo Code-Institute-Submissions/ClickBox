@@ -43,8 +43,10 @@ $(document).ready(function() {
             $(document.getElementById("volume-bar").style.backgroundColor= "#8a8a8aff");
             $("#screen-top-up").attr('class', 'screen-top-up');
             $("#screen-bottom-up").attr('class', 'screen-bottom-up');
-            $(document.getElementById("welcome").style.color = "orange");
             $("#welcome").text("BYE");
+            $("#welcome-intro1").attr('class', 'welcome-triangle-hide');
+            $("#welcome-intro2").attr('class', 'welcome-triangle-hide');
+            $("#welcome-intro3").attr('class', 'welcome-triangle-hide');
             
         }
         else {
@@ -57,6 +59,7 @@ $(document).ready(function() {
             $("#screen-bottom-up").attr('class', 'screen-bottom-down');
             $(document.getElementById("welcome").style.color = "orange")
             $("#welcome").text("WELCOME");
+            
         }   
         
     });
@@ -119,5 +122,11 @@ $(document).on('click', '#click-to-enter', function()  {
     $("#welcome-intro3").attr('class', 'welcome-triangle3');
     $("#welcome").text("");
     $("#click-to-enter").text("");
+    $("#music-player").attr('class', 'music-player');
+    $("#play").attr('class', 'play');
+    $("#next").attr('class', 'next');
+    $("#back").attr('class', 'back');
+    $("#music-bar").attr('class', 'music-bar');
+    
     
 });

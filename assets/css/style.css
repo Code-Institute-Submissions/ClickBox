@@ -155,7 +155,7 @@
     left: 50%;
     transform-origin: bottom;
     transform: translate(-50%);
-    transition-duration: 3s;
+    transition-duration: 0s;
     cursor: pointer;
 }
 
@@ -168,7 +168,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color:#424242;
-    transition-duration: 2s;
+    transition-duration: 0s;
 }
 .inner-screen-area {
     width: 90%;
@@ -178,7 +178,7 @@
     position: absolute;
     transform: translate(-50%, -50%);
     background-color:#424242;
-    transition-duration: 2s;
+    transition-duration: 0s;
 }
 .touch-screen {
     width: 80%;
@@ -188,7 +188,7 @@
     position: absolute;
     transform-origin: bottom;
     transform: translate(-50%, -50%);
-    transition-duration: 2s;
+    transition-duration: 0s;
     background-color: #d9d9d9;
     overflow: hidden;
 }
@@ -202,7 +202,6 @@
     top: -2px;
     transform: rotateX(0);
     transition-duration: 3s;
-    transition-delay: 0;
     z-index: 0;
 }
 
@@ -214,7 +213,6 @@
     position: absolute;
     transform: rotateX(10deg);
     transition-duration: 3s;
-    transition-delay: 1s;
     z-index: 0;
 }
 
@@ -227,7 +225,6 @@
     height: 52%;
     transform: rotateX(0);
     transition-duration: 3s;
-    transition-delay: 0s;
     z-index: 0;
 }
 
@@ -240,7 +237,6 @@
     transform: rotateX(15deg);
     transition-duration: 3s;
     transform-origin: bottom;
-    transition-delay: 1s;
     z-index: 0;
 }
 
@@ -292,8 +288,9 @@
     right: 0px;
     position: absolute;
     bottom:-2px;
-    transform-origin: bottom;
-    z-index: 1;
+    transform-origin: left;
+    z-index: -4;
+    transition-duration: 1s;
 }
 
 .welcome-triangle1 {
@@ -306,20 +303,20 @@
     transform-origin: left;
     transition-duration: 2s;
     transition-delay: 0.5s;
-    z-index: -3;
+    z-index: -4;
 }
 
 .welcome-triangle2 {
     background-image: linear-gradient(to left bottom, #b7b7b7 0%, #b7b7b7 50%, transparent 50%);
     position: absolute;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     top: 0;
     right: 0;
     transform-origin: left;
     transition-duration: 2s;
     transition-delay: 0.5s;
-    z-index: -3;
+    z-index: -4;
 }
 
 .welcome-triangle3 {
@@ -332,8 +329,80 @@
     transform-origin: left;
     transition-duration: 2s;
     transition-delay: 0.5s;
-    z-index: -3;
+    z-index: -4;
 }
+
+/*------Music player ------- */
+
+.music-player {
+    
+    z-index: 3;
+    width: 80%;
+    height: 33%;
+    position: absolute;
+    bottom: 10%;
+    transform-origin: bottom;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.play {
+    background: purple;
+    position: absolute;
+    z-index: 3;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    height: 37%;
+
+    
+}
+
+.next {
+    background: green;
+    position: absolute;
+    z-index: 3;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    height: 20%;
+}
+
+
+.back {
+    background: blue;
+    position: absolute;
+    z-index: 3;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    height: 20%;
+}
+
+.music-bar {
+    background: black;
+    position: absolute;
+    z-index: 3;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 5%;
+}
+
 /*------IOS Switch for Screen ------- */
 
 .light-switch-screen-bg {
