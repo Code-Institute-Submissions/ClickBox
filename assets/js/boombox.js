@@ -43,6 +43,8 @@ $(document).ready(function() {
             $(document.getElementById("volume-bar").style.backgroundColor= "#8a8a8aff");
             $("#screen-top-up").attr('class', 'screen-top-up');
             $("#screen-bottom-up").attr('class', 'screen-bottom-up');
+            $(document.getElementById("welcome").style.color = "orange");
+            $("#welcome").text("BYE");
             
         }
         else {
@@ -53,7 +55,8 @@ $(document).ready(function() {
             $(document.getElementById("volume-bar").style.backgroundColor= "orange");
             $("#screen-top-up").attr('class', 'screen-top-down');
             $("#screen-bottom-up").attr('class', 'screen-bottom-down');
-            $(document.getElementById("welcome").style.color = "orange");
+            $(document.getElementById("welcome").style.color = "orange")
+            $("#welcome").text("WELCOME");
         }   
         
     });
@@ -108,4 +111,13 @@ $(document).on('click', '#background', function() {
     $('.welcome-show').removeClass('welcome-show').addClass('welcome-hide');
 });
 
-/*---------------------------- audio ----------------- */
+/*---------------------------- welcome animation ----------------- */
+
+$(document).on('click', '#click-to-enter', function()  {
+    $("#welcome-intro1").attr('class', 'welcome-triangle1');
+    $("#welcome-intro2").attr('class', 'welcome-triangle2');
+    $("#welcome-intro3").attr('class', 'welcome-triangle3');
+    $("#welcome").text("");
+    $("#click-to-enter").text("");
+    
+});
