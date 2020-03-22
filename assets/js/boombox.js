@@ -53,6 +53,10 @@ $(document).ready(function () {
             $("#back").removeClass('back');
             $("#music-bar").removeClass('music-bar');
             $("#menu-button").removeClass('menu-button');
+            $("#item-1").attr('class', 'item-hide');
+            $("#item-2").attr('class', 'item-hide');
+            $("#item-3").attr('class', 'item-hide');
+            $("#item-4").attr('class', 'item-hide');
 
         }
         else {
@@ -140,3 +144,18 @@ $(document).on('click', '#click-to-enter', function () {
 
 /*---------------------------- menu screen ----------------- */
 
+$(document).on('click', '#menu-button', function () {
+    $("#welcome-intro1").attr('class', 'welcome-triangle-hide');
+    $("#welcome-intro2").attr('class', 'welcome-triangle-hide');
+    $("#welcome-intro3").attr('class', 'welcome-triangle-hide');
+    $("#menu").attr('class', 'menu');
+    $("#music-player").removeClass('music-player');
+    $("#play").removeClass('play');
+    $("#next").removeClass('next');
+    $("#back").removeClass('back');
+    $("#music-bar").removeClass('music-bar');
+    $("#item-1").attr('class', 'item-1');
+    $("#item-2").attr('class', 'item-2');
+    $("#item-3").attr('class', 'item-3');
+    $("#item-4").attr('class', 'item-4');
+});
