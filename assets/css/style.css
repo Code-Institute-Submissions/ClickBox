@@ -169,6 +169,8 @@
     transform: translate(-50%, -50%);
     background-color:#424242;
     transition-duration: 0s;
+    box-shadow: 0px 0px 40px rgb(32, 32, 32);
+
 }
 .inner-screen-area {
     width: 90%;
@@ -274,12 +276,15 @@
     font-family: "Oswald", sans-serif;
     cursor: pointer;
     font-size: 1.5em;
+    transition: ease-in-out 0.5s; 
 }
 
 .click-to-enter:hover {
     text-decoration: underline;
     text-decoration-color: orange;
-    text-decoration-line: 2px;    
+    text-decoration-line: 2px; 
+    font-size: 1.75em;
+    transition: ease-in-out 0.5s;   
 }
 
 .welcome-triangle-hide {
@@ -332,6 +337,28 @@
     z-index: -4;
 }
 
+.menu-button {
+    
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    width: 10%;
+    height: 11%;
+    border: 2px solid orange;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    transform-origin: left;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+}
+
+.menu-button:hover {
+   border-color: black;
+   transition: ease-in-out 0.5s;
+}
+
+
 /*------Music player ------- */
 
 .music-player {
@@ -349,7 +376,7 @@
 }
 
 .play {
-    background: purple;
+    background: orange;
     position: absolute;
     z-index: 3;
     transition-duration: 2s;
@@ -359,12 +386,12 @@
     transform: translate(-50%, -50%);
     width: 10%;
     height: 37%;
-
+    
     
 }
 
 .next {
-    background: green;
+    background: orange;
     position: absolute;
     z-index: 3;
     transition-duration: 2s;
@@ -378,7 +405,7 @@
 
 
 .back {
-    background: blue;
+    background: orange;
     position: absolute;
     z-index: 3;
     transition-duration: 2s;
@@ -401,6 +428,7 @@
     transform: translate(-50%, -50%);
     width: 80%;
     height: 5%;
+    border-radius: 5px;
 }
 
 /*------IOS Switch for Screen ------- */
