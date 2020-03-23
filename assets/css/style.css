@@ -449,91 +449,91 @@
 }
 
 .changeRed {
-    border: solid 2px black;
-    background-color: red;
-    top: 33%;
-    padding-top: 10%;
-    width: 20%;
-    right: 25%;
+    top: 0%;
+    height: 25%;
+    width: 100%;
     cursor: pointer;
     position: absolute;
-    transform: translate(0,-50%);
-    border-radius: 50px;
     z-index: 10;
     transition: ease-in-out 0.5s;
+    left:50%;
+    transform: translate(-50%)
 }
 
 .changeBlue {
-    border: solid 2px black;
-    background-color: blue;
-    top: 66%;
-    padding-top: 10%;
-    width: 20%;
-    right: 25%;
+    background-color: #8f8f8f;
+    top: 25%;
+    height: 25%;
+    width: 100%;
     cursor: pointer;
     position: absolute;
-    transform: translate(0,-50%);
-    border-radius: 50px;
     z-index: 10;
     transition: ease-in-out 0.5s;
+    left:50%;
+    transform: translate(-50%)
 }
 
 .changeGreen {
-    border: solid 2px black;
-    background-color: green;  
-    top: 33%;
-    padding-top: 10%;
-    width: 20%;
-    left: 25%;
+    top: 50%;
+    height: 25%;
+    width: 100%;
     cursor: pointer;
     position: absolute;
-    transform: translate(0,-50%);
-    border-radius: 50px;
     z-index: 10;
     transition: ease-in-out 0.5s;
+    left:50%;
+    transform: translate(-50%)
 }
 
 .changeOrange {
-    border: solid 2px black;
-    background-color: orange;
-    top: 66%;
-    padding-top: 10%;
-    width: 20%;
-    left: 25%;
+    background-color: #8f8f8f;
+    top: 75%;
+    height: 25%;
+    width: 100%;
     cursor: pointer;
     position: absolute;
-    transform: translate(0,-50%);
-    border-radius: 50px;
     z-index: 10;
     transition: ease-in-out 0.5s;
+    left:50%;
+    transform: translate(-50%)
 }
 
 .changeRed:hover{
-    border: solid 2px black;
-    padding-top: 13%;
-    width: 25%;
+    height: 28%;
+    top: -1%;
+    background-color: red;
 }
 
 .changeBlue:hover {
-    border: solid 2px black;
-    padding-top: 13%;
-    width: 25%;
+    height: 28%;
+    top: 24%;
+    background-color: blue;
     
 }
 
 .changeGreen:hover {
-    border: solid 2px black;
-    padding-top: 13%;
-    width: 25%;
+    height: 28%;
+    top: 49%;
+    background-color: green;
+    transition-duration: 0.5s;
 }
 
 .changeOrange:hover {
-    border: solid 2px black;
-    padding-top: 13%;
-    width: 25%;
+    height: 28%;
+    top: 74%;
+    background-color: orange;
+    transition-duration: 0.5s;
     
 }
-
+.color-text {
+    top:50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: "Oswald", sans-serif;
+    margin: 0 auto;
+    z-index: 11;
+}
 
 /*------Music player ------- */
 
