@@ -154,8 +154,33 @@ $(document).on('click', '#menu-button', function () {
     $("#next").removeClass('next');
     $("#back").removeClass('back');
     $("#music-bar").removeClass('music-bar');
+    $("#item-2 > h1").text("Player");
+    $("#item-3 > h1").text("Libary");
+    $("#item-4 > h1").text("Colors");
     $("#item-1").attr('class', 'item-1');
     $("#item-2").attr('class', 'item-2');
     $("#item-3").attr('class', 'item-3');
     $("#item-4").attr('class', 'item-4');
+});
+
+/*---------------------------- music Player ----------------- */
+
+$(document).on('click', '#item-2', function () {
+    $("#welcome-intro1").attr('class', 'welcome-triangle1');
+    $("#welcome-intro2").attr('class', 'welcome-triangle2');
+    $("#welcome-intro3").attr('class', 'welcome-triangle3');
+    $("#welcome").text("");
+    $("#click-to-enter").text("");
+    $("#music-player").addClass('music-player');
+    $("#play").addClass('play');
+    $("#next").addClass('next');
+    $("#back").addClass('back');
+    $("#music-bar").addClass('music-bar');
+    $("#menu-button").addClass('menu-button');
+    $("#item-1").attr('class', 'item-hide');
+    $("#item-2").attr('class', 'item-hide');
+    $("#item-3").attr('class', 'item-hide');
+    $("#item-4").attr('class', 'item-hide');
+
+
 });
