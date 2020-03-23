@@ -2,17 +2,10 @@
 
 #background { 
     background-color: #8a8a8aff;    
-    height: 66vh;
+    height:100vh;
     z-index: 0;
     position: relative;
     transition-duration: 1s;
-}
-
-
-.table {
-    background-color: #d9d9d9ff;
-    height: 34vh; 
-    z-index: 0;
 }
 
 
@@ -112,8 +105,8 @@
 /*----------------------------Speaker ----------------- */
 .speaker-box-show {
     background-color: #434343;
-    width: 400px;
-    height: 600px;
+    width: 25%;
+    height: 70%;
     position: absolute; 
     z-index: 2;
     top: 25%;
@@ -136,8 +129,8 @@
     background-color: rgb(128, 128, 128, 0.1);
     border: solid gray 2px;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 2%;
+    left: 2%;
     box-shadow: inset 0px 0px 3px black;
     transition-duration: 1s;
 }
@@ -147,11 +140,11 @@
 	border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
 	height: 0;
-	width: 400px;
+	width: 25%;
     z-index: 4;
     position: absolute;
     display: block;
-    top: 19.8%;
+    bottom: 74.8%;
     left: 50%;
     transform-origin: bottom;
     transform: translate(-50%);
@@ -677,8 +670,8 @@
 }
 /*-------------------------Speaker small ------------------------- */
 .speaker-small-frame {
-    width: 200px;
-    height: 200px;
+    width: 40%;
+    height: 31%;
     background-color: #2c2c2c;
     position: absolute;
     border-radius: 50%;
@@ -727,8 +720,8 @@
 
 /*--------------Speaker big --------------- */
 .speaker-big-frame {
-    width: 280px;
-    height: 280px;
+    width:65%;
+    height: 50%;
     background-color: #2c2c2c;
     position: absolute;
     border-radius: 50%;
@@ -773,3 +766,101 @@
     box-shadow: inset 0px 0px 20px rgb(73, 73, 73), 0px 0px 20px rgb(73, 73, 73);
 }
 
+@media screen and (max-width: 1143px) {
+
+.speaker-box-show {
+    background-color: #434343;
+    width: 40%;
+    height: 70%;
+    position: absolute; 
+    z-index: 2;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: inset 0px 0px 40px rgb(32, 32, 32), 0px 0px 40px rgb(32, 32, 32);
+}
+
+.screen-top {
+    border-bottom: 50px solid #424242;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 40%;
+    z-index: 4;
+    position: absolute;
+    display: block;
+    bottom: 74.8%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translate(-50%);
+    transition-duration: 0s;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 943px) {
+
+.speaker-box-show {
+    background-color: #434343;
+    width: 60%;
+    height: 65%;
+    position: absolute; 
+    z-index: 2;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: inset 0px 0px 40px rgb(32, 32, 32), 0px 0px 40px rgb(32, 32, 32);
+}
+
+.screen-top {
+    border-bottom: 50px solid #424242;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 60%;
+    z-index: 4;
+    position: absolute;
+    display: block;
+    bottom: 74.8%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translate(-50%);
+    transition-duration: 0s;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 643px) {
+
+.speaker-box-show {
+    background-color: #434343;
+    width: 65%;
+    height: 60%;
+    position: absolute; 
+    z-index: 2;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: inset 0px 0px 40px rgb(32, 32, 32), 0px 0px 40px rgb(32, 32, 32);
+    
+}
+
+.screen-top {
+    border-bottom: 50px solid #424242;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 65%;
+    z-index: 4;
+    position: absolute;
+    display: block;
+    bottom: 74.8%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translate(-50%);
+    transition-duration: 0s;
+    cursor: pointer;
+}
