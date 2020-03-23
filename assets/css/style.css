@@ -65,43 +65,7 @@
     background-color: #8a8a8aff;
 }
  
-/*----------------------------Color change buttons ----------------- */
 
-.changeRed {
-    border-radius: 50%;
-    background-color: red;
-    height: 25px;
-    width: 25px;
-    float: right;
-    margin-right: 20px;
-    margin-top: 20px;
-    box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
-    cursor: pointer;
-}
-
-.changeBlue {
-    border-radius: 50%;
-    background-color:blue;
-    height: 25px;
-    width: 25px;
-    float: right;
-     margin-right: 20px;
-    margin-top: 20px;
-    box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
-    cursor: pointer;
-}
-
-.changeGreen {
-    border-radius: 50%;
-    background-color: green;  
-    height: 25px;
-    width: 25px;
-    float: right;
-    margin-right: 20px;
-    margin-top: 20px;
-    box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
-    cursor: pointer;
-}
 /*----------------------------Speaker ----------------- */
 .speaker-box-show {
     background-color: #434343;
@@ -428,6 +392,7 @@
     transition-duration: 1s;
     z-index: -2;
     transform-origin: bottom;
+     cursor: pointer;
 }
 
 .item-2:hover {
@@ -454,8 +419,6 @@
     cursor: pointer;
 }
 
-
-
 .item-4:hover {
     width: 100%;
     position: absolute;
@@ -463,10 +426,74 @@
     top:70.88%;
     background-color: orange;
     transition: ease-in-out 0.2s;
-    z-index: -2;
+    z-index: -3;
     transform-origin: bottom;
     cursor: pointer;
 }
+
+/*----------------------------Color change buttons ----------------- */
+
+.color-picker {
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    z-index: -8;
+    position: absolute;
+}
+
+.changeRed {
+    background-color: red;
+    top: 33%;
+    padding-top: 10%;
+    width: 10%;
+    right: 33%;
+    box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
+    cursor: pointer;
+    position: absolute;
+    transform: translate(0,-50%);
+    border-radius: 50%;
+}
+
+.changeBlue {
+    background-color:blue;
+    top: 66%;
+    padding-top: 10%;
+    width: 10%;
+    right: 33%;
+    box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
+    cursor: pointer;
+    position: absolute;
+    transform: translate(0,-50%);
+    border-radius: 50%;
+}
+
+.changeGreen {
+    background-color: green;  
+    top: 33%;
+    padding-top: 10%;
+    width: 10%;
+    left: 33%;
+    box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
+    cursor: pointer;
+    position: absolute;
+    transform: translate(0,-50%);
+    border-radius: 50%;
+}
+
+.changeOrange {
+    background-color:orange;
+    top: 66%;
+    padding-top: 10%;
+    width: 10%;
+    left: 33%;
+    box-shadow: inset 0px 0px 2px rgb(109, 108, 108);
+    cursor: pointer;
+    position: absolute;
+    transform: translate(0,-50%);
+    border-radius: 50%;
+}
+
+
 
 /*------Music player ------- */
 

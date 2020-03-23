@@ -181,6 +181,16 @@ $(document).on('click', '#item-2', function () {
     $("#item-2").attr('class', 'item-hide');
     $("#item-3").attr('class', 'item-hide');
     $("#item-4").attr('class', 'item-hide');
+});
 
-
+$(document).on('click', '#item-4', function () {
+    $("#color-picker").attr('class', 'color-picker');    
+    $("#item-1").attr('class', 'item-hide');
+    $("#item-2").attr('class', 'item-hide');
+    $("#item-3").attr('class', 'item-hide');
+    $("#item-4").attr('class', 'item-hide');
+    $("#changeRed").attr('class', 'changeRed');
+    $("#changeBlue").attr('class', 'changeBlue');
+    $("#changeGreen").attr('class', 'changeGreen');
+    $("#changeOrange").attr('class', 'changeOrange');
 });
