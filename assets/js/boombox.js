@@ -57,6 +57,12 @@ $(document).ready(function () {
             $("#item-2").attr('class', 'item-hide');
             $("#item-3").attr('class', 'item-hide');
             $("#item-4").attr('class', 'item-hide');
+            $("#changeRed").attr('class', '');
+            $("#changeBlue").attr('class', '');
+            $("#changeGreen").attr('class', '');
+            $("#changeOrange").attr('class', '');
+            $("#color-picker").attr('class', '');
+            $("#color-menu-bar").attr('class', '');
 
         }
         else {
@@ -103,6 +109,16 @@ function changeGreen() {
     document.getElementById("speaker-big-color-changer").style.backgroundColor = "green";
     document.getElementById("volume-bar").style.backgroundColor = "green";
     document.getElementById("welcome").style.color = "green";
+    $(".light-switch-screen-bg-on").backgroundColor = "green";
+}
+
+function changeOrange() {
+    document.getElementById("background").style.backgroundColor = "orange"
+    document.getElementById("volume-box").style.borderColor = "orange";
+    document.getElementById("speaker-small-color-changer").style.backgroundColor = "orange";
+    document.getElementById("speaker-big-color-changer").style.backgroundColor = "orange";
+    document.getElementById("volume-bar").style.backgroundColor = "orange";
+    document.getElementById("welcome").style.color = "orange";
 }
 /*----------------------------Screen Zoom Effect ----------------- */
 $(document).on('click', '#speaker-top', function () {
@@ -161,6 +177,13 @@ $(document).on('click', '#menu-button', function () {
     $("#item-2").attr('class', 'item-2');
     $("#item-3").attr('class', 'item-3');
     $("#item-4").attr('class', 'item-4');
+    $("#changeRed").attr('class', '');
+    $("#changeBlue").attr('class', '');
+    $("#changeGreen").attr('class', '');
+    $("#changeOrange").attr('class', '');
+    $("#color-picker").attr('class', '');
+    $("#color-menu-bar").attr('class', '');
+
 });
 
 /*---------------------------- music Player ----------------- */
@@ -183,8 +206,10 @@ $(document).on('click', '#item-2', function () {
     $("#item-4").attr('class', 'item-hide');
 });
 
+/*---------------------------- color picker ----------------- */
+
 $(document).on('click', '#item-4', function () {
-    $("#color-picker").attr('class', 'color-picker');    
+    $("#color-picker").attr('class', 'color-picker');
     $("#item-1").attr('class', 'item-hide');
     $("#item-2").attr('class', 'item-hide');
     $("#item-3").attr('class', 'item-hide');
@@ -193,4 +218,5 @@ $(document).on('click', '#item-4', function () {
     $("#changeBlue").attr('class', 'changeBlue');
     $("#changeGreen").attr('class', 'changeGreen');
     $("#changeOrange").attr('class', 'changeOrange');
+    $("#color-menu-bar").attr('class', 'color-menu-bar');
 });
