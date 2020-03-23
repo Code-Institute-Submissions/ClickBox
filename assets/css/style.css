@@ -371,59 +371,86 @@
 .item-hide {
     bottom: 0;
     width: 100%;
-    height: 5%;
-    display: none;
-    color: transparent;
-    font-size: 1px;
+    height: 0%;
     z-index: -8;
-    transition-duration: 2s;
 }
 
 .item-1 {
     width: 100%;
     position: absolute;
-    height: 100%;
+    height:100%;
     top:0%;
     background-color: #999999;
-    transition-duration: 2s;
-    transform-origin: top;
+    transform-origin: bottom;
+    transition-duration: 1s;
     z-index: -5;
+    
 }
-
 .item-2 {
     width: 100%;
     position: absolute;
     height:85%;
     top:15%;
     background-color: #b7b7b7;
-    transition-duration: 2s;
-    transform-origin: top;
+    transition-duration: 1s;
     z-index: -4;
+    transform-origin: bottom;
 }
 
 .item-3 {
     width: 100%;
     position: absolute;
-    height: 60%;
-    top:40%;
-    background-color: #c7c7c7;
-    transition-duration: 2s;
-    transform-origin: top;
+    height: 56.12%;
+    top:43.36%;
+    background-color: #999999;
+    transition-duration: 1s;
     z-index: -3;
+    transform-origin: bottom;
 }
 
 .item-4 {
     width: 100%;
     position: absolute;
-    height: 32%;
-    top:68%;
-    background-color: #d7d7d7;
-    transition-duration: 2s;
-    transform-origin: top;
+    height: 28.33%;
+    top:71.88%;
+    background-color: #b7b7b7;
+    transition-duration: 1s;
     z-index: -2;
+    transform-origin: bottom;
 }
 
+.item-2:hover {
+    width: 100%;
+    position: absolute;
+    height:87%;
+    top:14%;
+    background-color: orange;
+    transition: ease-in-out 0.2s;
+    z-index: -4;
+    transform-origin: bottom;
+}
 
+.item-3:hover {
+    width: 100%;
+    position: absolute;
+    height: 58.12%;
+    top:42.36%;
+    background-color: orange;
+    transition: ease-in-out 0.2s;
+    z-index: -3;
+    transform-origin: bottom;
+}
+
+.item-4:hover {
+    width: 100%;
+    position: absolute;
+    height: 29.33%;
+    top:70.88%;
+    background-color: orange;
+    transition: ease-in-out 0.2s;
+    z-index: -2;
+    transform-origin: bottom;
+}
 
 /*------Music player ------- */
 
