@@ -18,9 +18,9 @@ $(document).ready(function () {
         else {
 
             $("#button").attr('class', 'button-on');
-            $(document.getElementById("background").style.backgroundColor = "orange");
-            $(document.getElementById("speaker-small-color-changer").style.backgroundColor = "orange");
-            $(document.getElementById("speaker-big-color-changer").style.backgroundColor = "orange");
+            $(document.getElementById("background").style.backgroundColor = "#97F2F3");
+            $(document.getElementById("speaker-small-color-changer").style.backgroundColor = "#97F2F3");
+            $(document.getElementById("speaker-big-color-changer").style.backgroundColor = "#97F2F3");
             $(document.getElementById("speaker-power").style.borderColor = "#00ff00");
 
         }
@@ -63,6 +63,8 @@ $(document).ready(function () {
             $("#changeOrange").attr('class', '');
             $("#color-picker").attr('class', '');
             $("#color-menu-bar").attr('class', '');
+            $("#color-menu-bar > h2").text("");
+            $("#menu-button > h4").text("");
             $("#changeRed > h2").text("");
             $("#changeBlue > h2").text("");
             $("#changeGreen > h2").text("");
@@ -73,11 +75,11 @@ $(document).ready(function () {
 
             $("#screen-button").attr('class', 'screen-button-on');
             $("#screen-switch").attr('class', 'light-switch-screen-bg-on');
-            $(document.getElementById("volume-box").style.borderColor = "orange");
-            $(document.getElementById("volume-bar").style.backgroundColor = "orange");
+            $(document.getElementById("volume-box").style.borderColor = "#97F2F3");
+            $(document.getElementById("volume-bar").style.backgroundColor = "#97F2F3");
             $("#screen-top-up").attr('class', 'screen-top-down');
             $("#screen-bottom-up").attr('class', 'screen-bottom-down');
-            $(document.getElementById("welcome").style.color = "orange")
+            $(document.getElementById("welcome").style.color = "#97F2F3")
             $("#welcome").text("WELCOME");
             $("#click-to-enter").text("Click Me");
         }
@@ -89,76 +91,76 @@ $(document).ready(function () {
 
 /*----------------------------color Switch Screen ----------------- */
 function changeRed() {
-    document.getElementById("background").style.backgroundColor = "red";
-    document.getElementById("volume-box").style.borderColor = "red";
-    document.getElementById("speaker-small-color-changer").style.backgroundColor = "red";
-    document.getElementById("speaker-big-color-changer").style.backgroundColor = "red";
-    document.getElementById("volume-bar").style.backgroundColor = "red";
-    document.getElementById("volume-bar").style.backgroundColor = "red";
-    document.getElementById("welcome").style.color = "red";
+    document.getElementById("background").style.backgroundColor = "#ff8b92";
+    document.getElementById("volume-box").style.borderColor = "#ff8b92";
+    document.getElementById("speaker-small-color-changer").style.backgroundColor = "#ff8b92";
+    document.getElementById("speaker-big-color-changer").style.backgroundColor = "#ff8b92";
+    document.getElementById("volume-bar").style.backgroundColor = "#ff8b92";
+    document.getElementById("volume-bar").style.backgroundColor = "#ff8b92";
+    document.getElementById("welcome").style.color = "#ff8b92";
     document.getElementById("item-2").onmouseover = function() {
-        this.style.backgroundColor = "red";}
+        this.style.backgroundColor = "#ff8b92";}
     document.getElementById("item-2").onmouseout = function() {
         this.style.backgroundColor = "#b7b7b7";}
     document.getElementById("item-3").onmouseover = function() {
-        this.style.backgroundColor = "red";}
+        this.style.backgroundColor = "#ff8b92";}
     document.getElementById("item-3").onmouseout = function() {
         this.style.backgroundColor = "#999999";}
     document.getElementById("item-4").onmouseover = function() {
-        this.style.backgroundColor = "red";}
+        this.style.backgroundColor = "#ff8b92";}
     document.getElementById("item-4").onmouseout = function() {
         this.style.backgroundColor = "#b7b7b7";}
     document.getElementById("menu-button").onmouseover = function() {
-        this.style.borderColor = "red";}
+        this.style.borderColor = "#ff8b92";}
     document.getElementById("menu-button").onmouseout = function() {
         this.style.borderColor = "black";}
 
 };
 function changeBlue() {
-    document.getElementById("background").style.backgroundColor = "blue";
-    document.getElementById("volume-box").style.borderColor = "blue";
-    document.getElementById("speaker-small-color-changer").style.backgroundColor = "blue";
-    document.getElementById("speaker-big-color-changer").style.backgroundColor = "blue";
-    document.getElementById("volume-bar").style.backgroundColor = "blue";
-    document.getElementById("welcome").style.color = "blue";
+    document.getElementById("background").style.backgroundColor = "#97F2F3";
+    document.getElementById("volume-box").style.borderColor = "#97F2F3";
+    document.getElementById("speaker-small-color-changer").style.backgroundColor = "#97F2F3";
+    document.getElementById("speaker-big-color-changer").style.backgroundColor = "#97F2F3";
+    document.getElementById("volume-bar").style.backgroundColor = "#97F2F3";
+    document.getElementById("welcome").style.color = "#97F2F3";
     document.getElementById("item-2").onmouseover = function() {
-        this.style.backgroundColor = "blue";}
+        this.style.backgroundColor = "#97F2F3";}
     document.getElementById("item-2").onmouseout = function() {
         this.style.backgroundColor = "#b7b7b7";}
     document.getElementById("item-3").onmouseover = function() {
-        this.style.backgroundColor = "blue";}
+        this.style.backgroundColor = "#97F2F3";}
     document.getElementById("item-3").onmouseout = function() {
         this.style.backgroundColor = "#999999";}
     document.getElementById("item-4").onmouseover = function() {
-        this.style.backgroundColor = "blue";}
+        this.style.backgroundColor = "#97F2F3";}
     document.getElementById("item-4").onmouseout = function() {
         this.style.backgroundColor = "#b7b7b7";}
     document.getElementById("menu-button").onmouseover = function() {
-        this.style.borderColor = "blue";}
+        this.style.borderColor = "#97F2F3";}
     document.getElementById("menu-button").onmouseout = function() {
         this.style.borderColor = "black";}
 }
 function changeGreen() {
-    document.getElementById("background").style.backgroundColor = "green"
-    document.getElementById("volume-box").style.borderColor = "green";
-    document.getElementById("speaker-small-color-changer").style.backgroundColor = "green";
-    document.getElementById("speaker-big-color-changer").style.backgroundColor = "green";
-    document.getElementById("volume-bar").style.backgroundColor = "green";
-    document.getElementById("welcome").style.color = "green";
+    document.getElementById("background").style.backgroundColor = "#d1eb79"
+    document.getElementById("volume-box").style.borderColor = "#d1eb79";
+    document.getElementById("speaker-small-color-changer").style.backgroundColor = "#d1eb79";
+    document.getElementById("speaker-big-color-changer").style.backgroundColor = "#d1eb79";
+    document.getElementById("volume-bar").style.backgroundColor = "#d1eb79";
+    document.getElementById("welcome").style.color = "#d1eb79";
     document.getElementById("item-2").onmouseover = function() {
-        this.style.backgroundColor = "green";}
+        this.style.backgroundColor = "#d1eb79";}
     document.getElementById("item-2").onmouseout = function() {
         this.style.backgroundColor = "#b7b7b7";}
     document.getElementById("item-3").onmouseover = function() {
-        this.style.backgroundColor = "green";}
+        this.style.backgroundColor = "#d1eb79";}
     document.getElementById("item-3").onmouseout = function() {
         this.style.backgroundColor = "#999999";}
     document.getElementById("item-4").onmouseover = function() {
-        this.style.backgroundColor = "green";}
+        this.style.backgroundColor = "#d1eb79";}
     document.getElementById("item-4").onmouseout = function() {
         this.style.backgroundColor = "#b7b7b7";}
     document.getElementById("menu-button").onmouseover = function() {
-        this.style.borderColor = "green";}
+        this.style.borderColor = "#d1eb79";}
     document.getElementById("menu-button").onmouseout = function() {
         this.style.borderColor = "black";}
     
@@ -166,26 +168,26 @@ function changeGreen() {
 }
 
 function changeOrange() {
-    document.getElementById("background").style.backgroundColor = "orange"
-    document.getElementById("volume-box").style.borderColor = "orange";
-    document.getElementById("speaker-small-color-changer").style.backgroundColor = "orange";
-    document.getElementById("speaker-big-color-changer").style.backgroundColor = "orange";
-    document.getElementById("volume-bar").style.backgroundColor = "orange";
-    document.getElementById("welcome").style.color = "orange";
+    document.getElementById("background").style.backgroundColor = "#FDCF76"
+    document.getElementById("volume-box").style.borderColor = "#FDCF76";
+    document.getElementById("speaker-small-color-changer").style.backgroundColor = "#FDCF76";
+    document.getElementById("speaker-big-color-changer").style.backgroundColor = "#FDCF76";
+    document.getElementById("volume-bar").style.backgroundColor = "#FDCF76";
+    document.getElementById("welcome").style.color = "#FDCF76";
     document.getElementById("item-2").onmouseover = function() {
-        this.style.backgroundColor = "orange";}
+        this.style.backgroundColor = "#FDCF76";}
     document.getElementById("item-2").onmouseout = function() {
         this.style.backgroundColor = "#b7b7b7";}
     document.getElementById("item-3").onmouseover = function() {
-        this.style.backgroundColor = "orange";}
+        this.style.backgroundColor = "#FDCF76";}
     document.getElementById("item-3").onmouseout = function() {
         this.style.backgroundColor = "#999999";}
     document.getElementById("item-4").onmouseover = function() {
-        this.style.backgroundColor = "orange";}
+        this.style.backgroundColor = "#FDCF76";}
     document.getElementById("item-4").onmouseout = function() {
         this.style.backgroundColor = "#b7b7b7";}
     document.getElementById("menu-button").onmouseover = function() {
-        this.style.borderColor = "orange";}
+        this.style.borderColor = "#FDCF76";}
     document.getElementById("menu-button").onmouseout = function() {
         this.style.borderColor = "black";}
 }
@@ -223,6 +225,8 @@ $(document).on('click', '#click-to-enter', function () {
     $("#back").addClass('back');
     $("#music-bar").addClass('music-bar');
     $("#menu-button").addClass('menu-button');
+    $("#menu-button > h4").text("HOME");
+    $("#item-1 > h1").text("");
 
 
 });
@@ -252,10 +256,14 @@ $(document).on('click', '#menu-button', function () {
     $("#changeOrange").attr('class', '');
     $("#color-picker").attr('class', '');
     $("#color-menu-bar").attr('class', '');
+    $("#menu-button > h4").text("");
+    $("#menu-button").attr('class', '');
+    $("#color-menu-bar > h2").text("");
     $("#changeRed > h2").text("");
     $("#changeBlue > h2").text("");
     $("#changeGreen > h2").text("");
     $("#changeOrange > h2").text("");
+    $("#item-1 > h1").text("HOME");
 
 });
 
@@ -277,6 +285,7 @@ $(document).on('click', '#item-2', function () {
     $("#item-2").attr('class', 'item-hide');
     $("#item-3").attr('class', 'item-hide');
     $("#item-4").attr('class', 'item-hide');
+    $("#menu-button > h4").text("HOME");
 });
 
 /*---------------------------- color picker ----------------- */
@@ -292,8 +301,11 @@ $(document).on('click', '#item-4', function () {
     $("#changeGreen").attr('class', 'changeGreen');
     $("#changeOrange").attr('class', 'changeOrange');
     $("#color-menu-bar").attr('class', 'color-menu-bar');
+    $("#color-menu-bar > h2").text("Pick a Color");
     $("#changeRed > h2").text("RED");
     $("#changeBlue > h2").text("BLUE");
     $("#changeGreen > h2").text("GREEN");
     $("#changeOrange > h2").text("ORANGE");
+    $("#menu-button > h4").text("HOME");
+    $("#item-1 > h1").text("");
 });

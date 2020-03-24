@@ -10,7 +10,7 @@
 
 
 .background.active {
-    background-color: orange;
+    background-color: #97F2F3;
     transition-duration: 1s;
 }
 
@@ -51,14 +51,14 @@
     left: 3px;
     box-shadow: inset 0px 0px 3px 0px rgb(109, 108, 108), 0px 0px 3px 0px rgb(109, 108, 108);
     cursor: pointer;
-    background-color: orange;
+    background-color: white;
     transition-duration: 1s;
     
 
 }
 
 .button:hover {
-    background-color: orange;
+    background-color: white;
 }
 
 .button-on:hover {
@@ -206,7 +206,7 @@
 }
 
 .welcome-show {
-    color: orange;
+    color: #97F2F3;
     font-family: "Oswald", sans-serif;
     text-align: center;
     top: 50%;
@@ -238,7 +238,7 @@
 
 .click-to-enter:hover {
     text-decoration: underline;
-    text-decoration-color: orange;
+    text-decoration-color: #97F2F3;
     text-decoration-line: 2px; 
     font-size: 1.75em;
     transition: ease-in-out 0.5s;   
@@ -307,8 +307,9 @@
     transition-duration: 0.5s;
 }
 
+
 .menu-button:hover {
-   border-color: orange;
+   border-color: #97F2F3;
    background-color: #838383;
    transition: ease-in-out 0.5s;
 }
@@ -352,7 +353,7 @@
     position: absolute;
     height:100%;
     top:0%;
-    background-color: #999999;
+    background-color: #d4d4d4;
     transform-origin: bottom;
     transition-duration: 1s;
     z-index: -5;
@@ -364,7 +365,7 @@
     position: absolute;
     height:28.33%;
     top:15%;
-    background-color: #b7b7b7;
+    background-color: white;
     transition-duration: 1s;
     z-index: -4;
     transform-origin: bottom;
@@ -375,7 +376,7 @@
     position: absolute;
     height: 28.33%;
     top:43.36%;
-    background-color: #999999;
+    background-color: white;
     transition-duration: 1s;
     z-index: -3;
     transform-origin: bottom;
@@ -386,7 +387,7 @@
     position: absolute;
     height: 28.33%;
     top:71.88%;
-    background-color: #b7b7b7;
+    background-color: white;
     transition-duration: 1s;
     z-index: -2;
     transform-origin: bottom;
@@ -398,7 +399,7 @@
     position: absolute;
     height:30.33%;
     top:14%;
-    background-color: orange;
+    background-color: #97F2F3;
     transition: ease-in-out 0.2s;
     z-index: -4;
     transform-origin: bottom;
@@ -410,7 +411,7 @@
     position: absolute;
     height: 30.33%;
     top:42.36%;
-    background-color: orange;
+    background-color: #97F2F3;
     transition: ease-in-out 0.2s;
     z-index: -3;
     transform-origin: bottom;
@@ -422,7 +423,7 @@
     position: absolute;
     height: 29.33%;
     top:70.88%;
-    background-color: orange;
+    background-color: #97F2F3;
     transition: ease-in-out 0.2s;
     z-index: -3;
     transform-origin: bottom;
@@ -436,12 +437,12 @@
     width: 100%;
     height: 85%;
     position: absolute;
-    background-color: #b6b6b6;
+    background-color: white;
 }
 
 .color-menu-bar{
-    background-color:#999999;
     top: 0;
+    background-color: #d4d4d4;
     height: 15%;
     width: 100%;
     position: absolute;
@@ -455,22 +456,23 @@
     cursor: pointer;
     position: absolute;
     z-index: 10;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.25s;
     left:50%;
-    transform: translate(-50%)
+    transform: translate(-50%);
+    transform-origin: bottom;
 }
 
 .changeBlue {
-    background-color: #8f8f8f;
     top: 25%;
     height: 25%;
     width: 100%;
     cursor: pointer;
     position: absolute;
     z-index: 10;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.25s;
     left:50%;
-    transform: translate(-50%)
+    transform: translate(-50%);
+    transform-origin: bottom;
 }
 
 .changeGreen {
@@ -480,59 +482,61 @@
     cursor: pointer;
     position: absolute;
     z-index: 10;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.25s;
     left:50%;
-    transform: translate(-50%)
+    transform: translate(-50%);
+    transform-origin: bottom;
 }
 
 .changeOrange {
-    background-color: #8f8f8f;
     top: 75%;
     height: 25%;
     width: 100%;
     cursor: pointer;
     position: absolute;
     z-index: 10;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.25s;
     left:50%;
-    transform: translate(-50%)
+    transform: translate(-50%);
+    transform-origin: bottom;
 }
 
 .changeRed:hover{
     height: 28%;
     top: -1%;
-    background-color: red;
+    background-color: #ff8b92;
 }
 
 .changeBlue:hover {
     height: 28%;
     top: 24%;
-    background-color: blue;
+    background-color: #97F2F3;
     
 }
 
 .changeGreen:hover {
     height: 28%;
     top: 49%;
-    background-color: green;
+    background-color: #d1eb79;
     transition-duration: 0.5s;
 }
 
 .changeOrange:hover {
     height: 28%;
     top: 74%;
-    background-color: orange;
+    background-color: #FDCF76;
     transition-duration: 0.5s;
     
 }
 .color-text {
-    top:50%;
+    top:47%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     font-family: "Oswald", sans-serif;
     margin: 0 auto;
     z-index: 11;
+    transition-duration: 0.5s;
 }
 
 /*------Music player ------- */
@@ -552,7 +556,7 @@
 }
 
 .play {
-    background: orange;
+    background: #97F2F3;
     position: absolute;
     z-index: 3;
     transition-duration: 2s;
@@ -567,7 +571,7 @@
 }
 
 .next {
-    background: orange;
+    background: #97F2F3;
     position: absolute;
     z-index: 3;
     transition-duration: 2s;
@@ -581,7 +585,7 @@
 
 
 .back {
-    background: orange;
+    background: #97F2F3;
     position: absolute;
     z-index: 3;
     transition-duration: 2s;
@@ -617,7 +621,7 @@
     right: 1px;
     top: 50%;
     transform: translate(0%, -50%);
-    background-color:#8a8a8aff;
+    background-color:rgb(97, 97, 97);
     transition-duration: 1s; 
     border-radius: 50px;
     box-shadow: inset 0px 0px 3px 0px rgb(56, 56, 56), 0px 0px 3px 0px black;
@@ -631,7 +635,7 @@
     right: 1px;
     top: 50%;
     transform: translate(0%, -50%);
-    background-color: orange;
+    background-color: #8a8a8aff;
     transition-duration: 1s;
     border-radius: 50px;
     box-shadow: inset 0px 0px 3px 0px rgb(88, 88, 88), 0px 0px 3px 0px black;
@@ -673,7 +677,7 @@
 
 /*--------------Volume Area --------------- */
 #volume-box {
-    height: 85%;
+    height: 70%;
     width: 5%;
     border: solid 2px #8a8a8aff;
     background-color: #3b3b3b;
@@ -702,12 +706,12 @@
 }
 
 .fa-plus-circle:hover {
-    color: orange;
+    color: #97F2F3;
     transition-duration: 1s;
 }
 
 .volume-bar {
-    height:70%;
+    height:85%;
     width: 10%;
     background-color: #8a8a8aff;
     border-radius: 50px;
@@ -732,7 +736,7 @@
 }
 
 .fa-minus-circle:hover {
-    color: orange;
+    color: #97F2F3;
     transition-duration: 1s;
 }
 /*-------------------------Speaker small ------------------------- */
