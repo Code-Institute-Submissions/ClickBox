@@ -45,7 +45,7 @@ $(document).ready(function () {
             $("#screen-bottom-up").attr('class', 'screen-bottom-up');
             $("#welcome").text("BYE");
             $("#welcome-intro1").attr('class', 'welcome-triangle-hide');
-            $("#welcome-intro2").attr('class', 'welcome-triangle-hide');
+            $("#welcome-intro2").attr('class', 'welcome-triangle-h7rreeeeeer');
             $("#welcome-intro3").attr('class', 'welcome-triangle-hide');
             $("#music-player").removeClass('music-player');
             $("#play").removeClass('play');
@@ -101,15 +101,15 @@ function changeRed() {
     document.getElementById("item-2").onmouseover = function() {
         this.style.backgroundColor = "#ff8b92";}
     document.getElementById("item-2").onmouseout = function() {
-        this.style.backgroundColor = "#b7b7b7";}
+        this.style.backgroundColor = "white";}
     document.getElementById("item-3").onmouseover = function() {
         this.style.backgroundColor = "#ff8b92";}
     document.getElementById("item-3").onmouseout = function() {
-        this.style.backgroundColor = "#999999";}
+        this.style.backgroundColor = "white";}
     document.getElementById("item-4").onmouseover = function() {
         this.style.backgroundColor = "#ff8b92";}
     document.getElementById("item-4").onmouseout = function() {
-        this.style.backgroundColor = "#b7b7b7";}
+        this.style.backgroundColor = "white";}
     document.getElementById("menu-button").onmouseover = function() {
         this.style.borderColor = "#ff8b92";}
     document.getElementById("menu-button").onmouseout = function() {
@@ -126,15 +126,15 @@ function changeBlue() {
     document.getElementById("item-2").onmouseover = function() {
         this.style.backgroundColor = "#97F2F3";}
     document.getElementById("item-2").onmouseout = function() {
-        this.style.backgroundColor = "#b7b7b7";}
+        this.style.backgroundColor = "white";}
     document.getElementById("item-3").onmouseover = function() {
         this.style.backgroundColor = "#97F2F3";}
     document.getElementById("item-3").onmouseout = function() {
-        this.style.backgroundColor = "#999999";}
+        this.style.backgroundColor = "white";}
     document.getElementById("item-4").onmouseover = function() {
         this.style.backgroundColor = "#97F2F3";}
     document.getElementById("item-4").onmouseout = function() {
-        this.style.backgroundColor = "#b7b7b7";}
+        this.style.backgroundColor = "white";}
     document.getElementById("menu-button").onmouseover = function() {
         this.style.borderColor = "#97F2F3";}
     document.getElementById("menu-button").onmouseout = function() {
@@ -150,15 +150,15 @@ function changeGreen() {
     document.getElementById("item-2").onmouseover = function() {
         this.style.backgroundColor = "#d1eb79";}
     document.getElementById("item-2").onmouseout = function() {
-        this.style.backgroundColor = "#b7b7b7";}
+        this.style.backgroundColor = "white";}
     document.getElementById("item-3").onmouseover = function() {
         this.style.backgroundColor = "#d1eb79";}
     document.getElementById("item-3").onmouseout = function() {
-        this.style.backgroundColor = "#999999";}
+        this.style.backgroundColor = "white";}
     document.getElementById("item-4").onmouseover = function() {
         this.style.backgroundColor = "#d1eb79";}
     document.getElementById("item-4").onmouseout = function() {
-        this.style.backgroundColor = "#b7b7b7";}
+        this.style.backgroundColor = "white";}
     document.getElementById("menu-button").onmouseover = function() {
         this.style.borderColor = "#d1eb79";}
     document.getElementById("menu-button").onmouseout = function() {
@@ -177,15 +177,15 @@ function changeOrange() {
     document.getElementById("item-2").onmouseover = function() {
         this.style.backgroundColor = "#FDCF76";}
     document.getElementById("item-2").onmouseout = function() {
-        this.style.backgroundColor = "#b7b7b7";}
+        this.style.backgroundColor = "white";}
     document.getElementById("item-3").onmouseover = function() {
         this.style.backgroundColor = "#FDCF76";}
     document.getElementById("item-3").onmouseout = function() {
-        this.style.backgroundColor = "#999999";}
+        this.style.backgroundColor = "white";}
     document.getElementById("item-4").onmouseover = function() {
         this.style.backgroundColor = "#FDCF76";}
     document.getElementById("item-4").onmouseout = function() {
-        this.style.backgroundColor = "#b7b7b7";}
+        this.style.backgroundColor = "white";}
     document.getElementById("menu-button").onmouseover = function() {
         this.style.borderColor = "#FDCF76";}
     document.getElementById("menu-button").onmouseout = function() {
@@ -214,19 +214,38 @@ $(document).on('click', '#background', function () {
 /*---------------------------- welcome animation ----------------- */
 
 $(document).on('click', '#click-to-enter', function () {
-    $("#welcome-intro1").attr('class', 'welcome-triangle1');
-    $("#welcome-intro2").attr('class', 'welcome-triangle2');
-    $("#welcome-intro3").attr('class', 'welcome-triangle3');
     $("#welcome").text("");
     $("#click-to-enter").text("");
-    $("#music-player").addClass('music-player');
-    $("#play").addClass('play');
-    $("#next").addClass('next');
-    $("#back").addClass('back');
-    $("#music-bar").addClass('music-bar');
-    $("#menu-button").addClass('menu-button');
-    $("#menu-button > h4").text("HOME");
-    $("#item-1 > h1").text("");
+    $("#welcome-intro1").attr('class', 'welcome-triangle-hide');
+    $("#welcome-intro2").attr('class', 'welcome-triangle-hide');
+    $("#welcome-intro3").attr('class', 'welcome-triangle-hide');
+    $("#menu").attr('class', 'menu');
+    $("#music-player").removeClass('music-player');
+    $("#play").removeClass('play');
+    $("#next").removeClass('next');
+    $("#back").removeClass('back');
+    $("#music-bar").removeClass('music-bar');
+    $("#item-2 > h1").text("Player");
+    $("#item-3 > h1").text("Libary");
+    $("#item-4 > h1").text("Colors");
+    $("#item-1").attr('class', 'item-1');
+    $("#item-2").attr('class', 'item-2');
+    $("#item-3").attr('class', 'item-3');
+    $("#item-4").attr('class', 'item-4');
+    $("#changeRed").attr('class', '');
+    $("#changeBlue").attr('class', '');
+    $("#changeGreen").attr('class', '');
+    $("#changeOrange").attr('class', '');
+    $("#color-picker").attr('class', '');
+    $("#color-menu-bar").attr('class', '');
+    $("#menu-button > h4").text("");
+    $("#menu-button").attr('class', '');
+    $("#color-menu-bar > h2").text("");
+    $("#changeRed > h2").text("");
+    $("#changeBlue > h2").text("");
+    $("#changeGreen > h2").text("");
+    $("#changeOrange > h2").text("");
+    $("#item-1 > h1").text("HOME");
 
 
 });
@@ -308,4 +327,8 @@ $(document).on('click', '#item-4', function () {
     $("#changeOrange > h2").text("ORANGE");
     $("#menu-button > h4").text("HOME");
     $("#item-1 > h1").text("");
+    $("#menu-button").attr('class', 'menu-button');
 });
+
+/*---------------------------- clock ----------------- */
+
