@@ -64,11 +64,12 @@ $(document).ready(function () {
             $("#color-picker").attr('class', '');
             $("#color-menu-bar").attr('class', '');
             $("#color-menu-bar > h2").text("");
-            $("#menu-button > h4").text("");
+            $("#menu-button > h5").text("");
             $("#changeRed > h2").text("");
             $("#changeBlue > h2").text("");
             $("#changeGreen > h2").text("");
             $("#changeOrange > h2").text("");
+            $("#click-to-enter").text("");
 
         }
         else {
@@ -79,7 +80,6 @@ $(document).ready(function () {
             $(document.getElementById("volume-bar").style.backgroundColor = "#97F2F3");
             $("#screen-top-up").attr('class', 'screen-top-down');
             $("#screen-bottom-up").attr('class', 'screen-bottom-down');
-            $(document.getElementById("welcome").style.color = "#97F2F3")
             $("#welcome").text("WELCOME");
             $("#click-to-enter").text("Click Me");
         }
@@ -98,6 +98,11 @@ function changeRed() {
     document.getElementById("volume-bar").style.backgroundColor = "#ff8b92";
     document.getElementById("volume-bar").style.backgroundColor = "#ff8b92";
     document.getElementById("welcome").style.color = "#ff8b92";
+    document.getElementById("clock").style.color = "#ff8b92";
+    document.getElementById("click-to-enter").onmouseover = function() {
+        this.style.textDecorationColor = "#ff8b92";}
+    document.getElementById("click-to-enter").onmouseout = function() {
+        this.style.backgroundColor = "transparent";}
     document.getElementById("item-2").onmouseover = function() {
         this.style.backgroundColor = "#ff8b92";}
     document.getElementById("item-2").onmouseout = function() {
@@ -123,6 +128,11 @@ function changeBlue() {
     document.getElementById("speaker-big-color-changer").style.backgroundColor = "#97F2F3";
     document.getElementById("volume-bar").style.backgroundColor = "#97F2F3";
     document.getElementById("welcome").style.color = "#97F2F3";
+    document.getElementById("clock").style.color = "#97F2F3";
+    document.getElementById("click-to-enter").onmouseover = function() {
+        this.style.textDecorationColor = "#97F2F3";}
+    document.getElementById("click-to-enter").onmouseout = function() {
+        this.style.backgroundColor = "transparent";}
     document.getElementById("item-2").onmouseover = function() {
         this.style.backgroundColor = "#97F2F3";}
     document.getElementById("item-2").onmouseout = function() {
@@ -147,6 +157,11 @@ function changeGreen() {
     document.getElementById("speaker-big-color-changer").style.backgroundColor = "#d1eb79";
     document.getElementById("volume-bar").style.backgroundColor = "#d1eb79";
     document.getElementById("welcome").style.color = "#d1eb79";
+    document.getElementById("clock").style.color = "#d1eb79";
+    document.getElementById("click-to-enter").onmouseover = function() {
+        this.style.textDecorationColor = "#d1eb79";}
+    document.getElementById("click-to-enter").onmouseout = function() {
+        this.style.backgroundColor = "transparent";}
     document.getElementById("item-2").onmouseover = function() {
         this.style.backgroundColor = "#d1eb79";}
     document.getElementById("item-2").onmouseout = function() {
@@ -174,6 +189,11 @@ function changeOrange() {
     document.getElementById("speaker-big-color-changer").style.backgroundColor = "#FDCF76";
     document.getElementById("volume-bar").style.backgroundColor = "#FDCF76";
     document.getElementById("welcome").style.color = "#FDCF76";
+    document.getElementById("clock").style.color = "#FDCF76";
+    document.getElementById("click-to-enter").onmouseover = function() {
+        this.style.textDecorationColor = "#FDCF76";}
+    document.getElementById("click-to-enter").onmouseout = function() {
+        this.style.backgroundColor = "transparent";}
     document.getElementById("item-2").onmouseover = function() {
         this.style.backgroundColor = "#FDCF76";}
     document.getElementById("item-2").onmouseout = function() {
@@ -238,7 +258,7 @@ $(document).on('click', '#click-to-enter', function () {
     $("#changeOrange").attr('class', '');
     $("#color-picker").attr('class', '');
     $("#color-menu-bar").attr('class', '');
-    $("#menu-button > h4").text("");
+    $("#menu-button > 5").text("");
     $("#menu-button").attr('class', '');
     $("#color-menu-bar > h2").text("");
     $("#changeRed > h2").text("");
@@ -275,7 +295,7 @@ $(document).on('click', '#menu-button', function () {
     $("#changeOrange").attr('class', '');
     $("#color-picker").attr('class', '');
     $("#color-menu-bar").attr('class', '');
-    $("#menu-button > h4").text("");
+    $("#menu-button > h5").text("");
     $("#menu-button").attr('class', '');
     $("#color-menu-bar > h2").text("");
     $("#changeRed > h2").text("");
@@ -304,7 +324,7 @@ $(document).on('click', '#item-2', function () {
     $("#item-2").attr('class', 'item-hide');
     $("#item-3").attr('class', 'item-hide');
     $("#item-4").attr('class', 'item-hide');
-    $("#menu-button > h4").text("HOME");
+    $("#menu-button > h5").text("HOME");
 });
 
 /*---------------------------- color picker ----------------- */
@@ -325,10 +345,23 @@ $(document).on('click', '#item-4', function () {
     $("#changeBlue > h2").text("BLUE");
     $("#changeGreen > h2").text("GREEN");
     $("#changeOrange > h2").text("ORANGE");
-    $("#menu-button > h4").text("HOME");
+    $("#menu-button > h5").text("HOME");
     $("#item-1 > h1").text("");
     $("#menu-button").attr('class', 'menu-button');
 });
 
 /*---------------------------- clock ----------------- */
-
+ // This is code from W3schools.com 
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    m = checkTime(m);
+    document.getElementById('clock').innerHTML =
+    h + ":" + m;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+}

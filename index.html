@@ -18,11 +18,11 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 	</script>
-    
+
 	<title>Document</title>
 </head>
 
-<body>
+<body onload="startTime()">
 	<div>
 		<div id="background">
 			<div class="light-switch-bg">
@@ -31,67 +31,68 @@
 		</div>
 		<div id="speaker">
 			<div id="speaker-top" class="screen-top">
-				<div id="inner-screen-area" class="inner-screen-area-hide"> 
-                    <div id="screen-switch" class="light-switch-screen">
-                        <div id="screen-button" class="screen-button"></div>
-                    </div>
+				<div id="inner-screen-area" class="inner-screen-area-hide">
+					<div id="screen-switch" class="light-switch-screen">
+						<div id="screen-button" class="screen-button"></div>
+					</div>
 					<div class="touch-screen">
-                        <div id="screen-top-up" class="screen-top-up"></div>
-                        <div id="screen-bottom-up" class="screen-bottom-up"></div>
-                        <div id="welcome" class="welcome-hide">
-                            <h1>WELCOME</h1>
-                        </div>
-                        <div id="menu-button" class="">
-                            <h4 class="color-text"></h4>
-                        </div>
-                        <div id="menu" class="">
-                            <div id="item-1" class="item-hide">
-                                <h1 class="menu-text"></h1>
-                            </div>
-                            <div id="item-2" class="item-hide">
-                                <h1 class="item-text"></h1>
-                            </div>
-                            <div id="item-3" class="item-hide">
-                                <h1 class="item-text"></h1>
-                            </div>
-                            <div id="item-4" class="item-hide">
-                                <h1 class="item-text"></h1>
-                                <div id="color-menu-bar" class="">
-                                    <h2 class="color-text"></h2>
-                                </div>
-                                <div id="color-picker" class="">
-                                    <div id="changeRed" class="" onclick="changeRed()">
-                                        <h2 class="color-text"></h2>
-                                    </div>
-                                    <div id="changeBlue" class="" onclick="changeBlue()">
-                                        <h2 class="color-text"></h2>
-                                    </div>
-                                    <div id="changeGreen" class="" onclick="changeGreen()">
-                                        <h2 class="color-text"></h2>
-                                    </div>
-                                    <div id="changeOrange" class="" onclick="changeOrange()">
-                                        <h2 class="color-text"></h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+						<div id="clock" class="clock"></div>
+						<div id="screen-top-up" class="screen-top-up"></div>
+						<div id="screen-bottom-up" class="screen-bottom-up"></div>
+						<div id="welcome" class="welcome-hide">
+							<h1>WELCOME</h1>
+						</div>
                         <div id="click-to-enter" class="click-to-enter">Click Me</div>
-                        <div id="welcome-intro1" class="welcome-triangle-hide"></div>
-                        <div id="welcome-intro2" class="welcome-triangle-hide"></div>
-                        <div id="welcome-intro3" class="welcome-triangle-hide"></div>
-                        <div id="music-player" class="">
-                            <div id="music-bar" class=""></div>
-                            <div id="play" class=""></div>
-                            <div id="next" class=""></div>
-                            <div id="back" class=""></div>
-                        </div>
-                        
-                    </div>
-                    <div id="volume-box" class="volume-box-hide">  
-                        <div id="volume-bar" class="volume-bar"></div>
-                    </div>
-                    
-                </div>
+						<div id="menu-button" class="">
+							<h5 class="color-text"></h5>
+						</div>
+						<div id="menu" class="">
+							<div id="item-1" class="item-hide">
+								<h1 class="menu-text"></h1>
+							</div>
+							<div id="item-2" class="item-hide">
+								<h1 class="item-text"></h1>
+								<div id="music-player-item" class="music-player-item"></div>
+								<div id="welcome-intro1" class="welcome-triangle-hide"></div>
+								<div id="welcome-intro2" class="welcome-triangle-hide"></div>
+								<div id="welcome-intro3" class="welcome-triangle-hide"></div>
+								<div id="music-player" class="">
+									<div id="music-bar" class=""></div>
+									<div id="play" class=""></div>
+									<div id="next" class=""></div>
+									<div id="back" class=""></div>
+								</div>
+							</div>
+							<div id="item-3" class="item-hide">
+								<h1 class="item-text"></h1>
+							</div>
+							<div id="item-4" class="item-hide">
+								<h1 class="item-text"></h1>
+								<div id="color-menu-bar" class="">
+									<h2 class="color-text"></h2>
+								</div>
+								<div id="color-picker" class="">
+									<div id="changeRed" class="" onclick="changeRed()">
+										<h2 class="color-text"></h2>
+									</div>
+									<div id="changeBlue" class="" onclick="changeBlue()">
+										<h2 class="color-text"></h2>
+									</div>
+									<div id="changeGreen" class="" onclick="changeGreen()">
+										<h2 class="color-text"></h2>
+									</div>
+									<div id="changeOrange" class="" onclick="changeOrange()">
+										<h2 class="color-text"></h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="volume-box" class="volume-box-hide">
+						<div id="volume-bar" class="volume-bar"></div>
+					</div>
+
+				</div>
 			</div>
 			<div id="speaker-box" class="speaker-box-show">
 				<div id="speaker-power">

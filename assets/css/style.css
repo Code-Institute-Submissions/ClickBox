@@ -152,6 +152,15 @@
     overflow: hidden;
 }
 
+.clock {
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+    color: #97F2F3;
+    font-size: 2em;
+    padding-left: 1%;
+    top: 1.5%;
+}
+
 /*------Screen animation ------- */
 .screen-top-up {
     width: 101%;
@@ -230,29 +239,21 @@
     position: absolute;
     z-index: -1;
     color: black;
+    text-decoration: underline;
+    text-decoration-color: rgba(151, 241, 243, 0);
     font-family: "Oswald", sans-serif;
     cursor: pointer;
     font-size: 1.5em;
-    transition: ease-in-out 0.5s; 
-}
-
+    transition: ease-in-out 0.5s;
+} 
 .click-to-enter:hover {
     text-decoration: underline;
     text-decoration-color: #97F2F3;
     text-decoration-line: 2px; 
     font-size: 1.75em;
-    transition: ease-in-out 0.5s;   
-}
-
-.welcome-triangle-hide {
-    width: 0;
-    height:100%;
+    transition: ease-in-out 0.5s;       
     right: 0px;
     position: absolute;
-    bottom:-2px;
-    transform-origin: left;
-    z-index: -4;
-    transition-duration: 1s;
 }
 
 .welcome-triangle1 {
@@ -944,3 +945,5 @@
     transition-duration: 0s;
     cursor: pointer;
 }
+    
+        
