@@ -72,6 +72,7 @@ $(document).ready(function () {
             $("#changeOrange > h2").text("");
             $("#click-to-enter").text("");
             $("#timebox").attr('class', 'timebox-hide');
+            $("#playlist_status").attr('class', 'playlist-name-hide'); 
 
         }
         else {
@@ -104,6 +105,7 @@ function changeRed() {
     document.getElementById("welcome").style.color = "#ff8b92";
     document.getElementById("clock").style.color = "#ff8b92";
     document.getElementById("seekslider").style.backgroundColor = "#ff8b92";
+    document.getElementById("playlist_status").style.color = "#ff8b92";
     document.getElementById("click-to-enter").onmouseover = function() {
         this.style.textDecorationColor = "#ff8b92";}
     document.getElementById("click-to-enter").onmouseout = function() {
@@ -135,6 +137,7 @@ function changeBlue() {
     document.getElementById("welcome").style.color = "#97F2F3";
     document.getElementById("clock").style.color = "#97F2F3";
     document.getElementById("seekslider").style.backgroundColor = "#97F2F3";
+    document.getElementById("playlist_status").style.color = "#97F2F3";
     document.getElementById("click-to-enter").onmouseover = function() {
         this.style.textDecorationColor = "#97F2F3";}
     document.getElementById("click-to-enter").onmouseout = function() {
@@ -165,6 +168,7 @@ function changeGreen() {
     document.getElementById("welcome").style.color = "#d1eb79";
     document.getElementById("clock").style.color = "#d1eb79";
     document.getElementById("seekslider").style.backgroundColor = "#d1eb79";
+    document.getElementById("playlist_status").style.color = "#d1eb79";
     document.getElementById("click-to-enter").onmouseover = function() {
         this.style.textDecorationColor = "#d1eb79";}
     document.getElementById("click-to-enter").onmouseout = function() {
@@ -198,6 +202,7 @@ function changeOrange() {
     document.getElementById("welcome").style.color = "#FDCF76";
     document.getElementById("clock").style.color = "#FDCF76";
     document.getElementById("seekslider").style.backgroundColor = "#FDCF76";
+    document.getElementById("playlist_status").style.color = "#FDCF76";
     document.getElementById("click-to-enter").onmouseover = function() {
         this.style.textDecorationColor = "#FDCF76";}
     document.getElementById("click-to-enter").onmouseout = function() {
@@ -312,6 +317,7 @@ $(document).on('click', '#menu-button', function () {
     $("#changeGreen > h2").text("");
     $("#changeOrange > h2").text("");
     $("#item-1 > h1").text("HOME");
+    $("#playlist_status").attr('class', 'playlist-name-hide'); 
 
 });
 
@@ -335,6 +341,8 @@ $(document).on('click', '#item-2', function () {
     $("#item-4").attr('class', 'item-hide');
     $("#menu-button > h5").text("HOME");
     $("#timebox").attr('class', 'timebox');
+    $("#playlist_status").attr('class', 'playlist-name'); 
+
 });
 
 /*---------------------------- color picker ----------------- */
@@ -375,7 +383,9 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};
     return i;
 };
-/*---------------------------- volume slider ----------------- */
+/*---------------------------- Music player  ----------------- */
+// This is code i learned and used the parts of the code for my music player
+// it is from http://www.developphp.com/video/JavaScript/Audio-Playlist-Array-Tutorial
 
 function initAudioPlayer() {
     var audio, playbutton, mutebutton, seekslider, volumeslider, seeking=false, seekto, curtimetext, durtimetext;
@@ -419,7 +429,7 @@ function initAudioPlayer() {
 		} else {
 		    playlist_index++;	
 		}
-		playlist_status.innerHTML = "Track "+(playlist_index+1)+" - "+ playlist[playlist_index]+ext;
+		playlist_status.innerHTML = "Song : " + playlist[playlist_index];
 		audio.src = dir+playlist[playlist_index]+ext;
 	    audio.play();
         }

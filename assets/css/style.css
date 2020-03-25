@@ -673,7 +673,7 @@ div.timebox-hide {
     display: none;
 }
 
-h2#playlist_status {
+h2.playlist-name {
     width: 50%;
     height: 10%;
     font-family: "Oswald", sans-serif;
@@ -682,6 +682,13 @@ h2#playlist_status {
     text-align: center;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #97F2F3;
+    text-decoration: underline solid 1px #97F2F3;
+    text-shadow: 3px 3px 4px rgb(109, 109, 109);
+}
+
+.playlist-name-hide {
+    display: none;
 }
 
 /*------IOS Switch for Screen ------- */
