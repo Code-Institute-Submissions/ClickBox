@@ -72,7 +72,7 @@ input {
 .speaker-box-show {
     background-color: #434343;
     width: 28%;
-    height: 70%;
+    height: 65%;
     position: absolute; 
     z-index: 2;
     top: 25%;
@@ -812,7 +812,7 @@ input.volume-bar[type='range']::-webkit-slider-thumb {
 /*-------------------------Speaker small ------------------------- */
 .speaker-small-frame {
     width: 50%;
-    height: 31%;
+    height: 32%;
     background-color: #2c2c2c;
     position: absolute;
     border-radius: 50%;
@@ -861,8 +861,8 @@ input.volume-bar[type='range']::-webkit-slider-thumb {
 
 /*--------------Speaker big --------------- */
 .speaker-big-frame {
-    width:65%;
-    height: 50%;
+    width: 74%;
+    height: 51%;
     background-color: #2c2c2c;
     position: absolute;
     border-radius: 50%;
@@ -971,6 +971,18 @@ input.volume-bar[type='range']::-webkit-slider-thumb {
     transition-duration: 0s;
     cursor: pointer;
 }
+    
+.speaker-big-frame {
+    width: 76%;
+    height: 50%;
+}
+
+.speaker-small-frame {
+    width: 54%;
+    height: 35%;
+}
+
+
 
 
 
@@ -979,7 +991,7 @@ input.volume-bar[type='range']::-webkit-slider-thumb {
 .speaker-box-show {
     background-color: #434343;
     width: 65%;
-    height: 60%;
+    height: 55%;
     position: absolute; 
     z-index: 2;
     top: 25%;
@@ -1006,4 +1018,13 @@ input.volume-bar[type='range']::-webkit-slider-thumb {
     cursor: pointer;
 }
     
-        
+.speaker-big-frame {
+    height: 49%;
+    width: 76%;
+}
+
+.speaker-small-frame {
+    width: 54%;
+    height: 33%;
+}
+
