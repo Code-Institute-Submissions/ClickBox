@@ -52,7 +52,7 @@ $(document).ready(function () {
             $("#play").removeClass('fas fa-play');
             $("#next").removeClass('next');
             $("#back").removeClass('back');
-            $("#music-bar").attr('class', 'music-bar-hide');
+            $("#seekslider").attr('class', 'seekslider-hide');
             $("#menu-button").removeClass('menu-button');
             $("#item-1").attr('class', 'item-hide');
             $("#item-2").attr('class', 'item-hide');
@@ -71,6 +71,7 @@ $(document).ready(function () {
             $("#changeGreen > h2").text("");
             $("#changeOrange > h2").text("");
             $("#click-to-enter").text("");
+            $("#timebox").attr('class', 'timebox-hide');
 
         }
         else {
@@ -102,7 +103,7 @@ function changeRed() {
     document.getElementById("volume-bar").style.backgroundColor = "#ff8b92";
     document.getElementById("welcome").style.color = "#ff8b92";
     document.getElementById("clock").style.color = "#ff8b92";
-    document.getElementById("music-bar").style.backgroundColor = "#ff8b92";
+    document.getElementById("seekslider").style.backgroundColor = "#ff8b92";
     document.getElementById("click-to-enter").onmouseover = function() {
         this.style.textDecorationColor = "#ff8b92";}
     document.getElementById("click-to-enter").onmouseout = function() {
@@ -133,7 +134,7 @@ function changeBlue() {
     document.getElementById("volume-bar").style.backgroundColor = "#97F2F3";
     document.getElementById("welcome").style.color = "#97F2F3";
     document.getElementById("clock").style.color = "#97F2F3";
-    document.getElementById("music-bar").style.backgroundColor = "#97F2F3";
+    document.getElementById("seekslider").style.backgroundColor = "#97F2F3";
     document.getElementById("click-to-enter").onmouseover = function() {
         this.style.textDecorationColor = "#97F2F3";}
     document.getElementById("click-to-enter").onmouseout = function() {
@@ -163,7 +164,7 @@ function changeGreen() {
     document.getElementById("volume-bar").style.backgroundColor = "#d1eb79";
     document.getElementById("welcome").style.color = "#d1eb79";
     document.getElementById("clock").style.color = "#d1eb79";
-    document.getElementById("music-bar").style.backgroundColor = "#d1eb79";
+    document.getElementById("seekslider").style.backgroundColor = "#d1eb79";
     document.getElementById("click-to-enter").onmouseover = function() {
         this.style.textDecorationColor = "#d1eb79";}
     document.getElementById("click-to-enter").onmouseout = function() {
@@ -196,7 +197,7 @@ function changeOrange() {
     document.getElementById("volume-bar").style.backgroundColor = "#FDCF76";
     document.getElementById("welcome").style.color = "#FDCF76";
     document.getElementById("clock").style.color = "#FDCF76";
-    document.getElementById("music-bar").style.backgroundColor = "#FDCF76";
+    document.getElementById("seekslider").style.backgroundColor = "#FDCF76";
     document.getElementById("click-to-enter").onmouseover = function() {
         this.style.textDecorationColor = "#FDCF76";}
     document.getElementById("click-to-enter").onmouseout = function() {
@@ -251,7 +252,7 @@ $(document).on('click', '#click-to-enter', function () {
     $("#play").removeClass('fas fa-play');
     $("#next").removeClass('next');
     $("#back").removeClass('back');
-    $("#music-bar").attr('class', 'music-bar-hide');
+    $("#seekslider").attr('class', 'seekslider-hide');
     $("#item-2 > h1").text("Player");
     $("#item-3 > h1").text("Libary");
     $("#item-4 > h1").text("Colors");
@@ -288,7 +289,8 @@ $(document).on('click', '#menu-button', function () {
     $("#play").removeClass('fas fa-play');
     $("#next").removeClass('next');
     $("#back").removeClass('back');
-    $("#music-bar").attr('class', 'music-bar-hide');
+    $("#timebox").attr('class', 'timebox-hide');
+    $("#seekslider").attr('class', 'seekslider-hide');
     $("#item-2 > h1").text("Player");
     $("#item-3 > h1").text("Libary");
     $("#item-4 > h1").text("Colors");
@@ -325,13 +327,14 @@ $(document).on('click', '#item-2', function () {
     $("#play").addClass('fas fa-play');
     $("#next").addClass('next');
     $("#back").addClass('back');
-    $("#music-bar").attr('class', 'music-bar');
+    $("#seekslider").attr('class', 'seekslider');
     $("#menu-button").addClass('menu-button');
     $("#item-1").attr('class', 'item-hide');
     $("#item-2").attr('class', 'item-hide');
     $("#item-3").attr('class', 'item-hide');
     $("#item-4").attr('class', 'item-hide');
     $("#menu-button > h5").text("HOME");
+    $("#timebox").attr('class', 'timebox');
 });
 
 /*---------------------------- color picker ----------------- */
@@ -373,23 +376,33 @@ function checkTime(i) {
     return i;
 };
 /*---------------------------- volume slider ----------------- */
-var audio, playbutton, seekslider, volumeslider, seeking; 
+
 function initAudioPlayer() {
+    var audio, playbutton, mutebutton, seekslider, volumeslider, seeking=false, seekto, curtimetext, durtimetext;
+    var dir = "../assets/audio/";
+    var playlist = ["Feels","Odessa","Granted"];
+    var playlist_index = 0;
+    var ext = ".mp3";
     audio = new Audio();
-    audio.src = "../assets/audio/Odessa.mp3";
-    audio.loop = true;
+    audio.src = dir+playlist[0]+ext;
+    audio.loop = false;
     audio.play();
+    playlist_status.innerHTML = "Song : " + playlist[playlist_index];
     // set object reference
     playbutton = document.getElementById("play");
-    seekslider = document.getElementById("music-bar");
+    seekslider = document.getElementById("seekslider");
     volumeslider = document.getElementById("volume-bar");
+    curtimetext = document.getElementById("curtimetext");
+    durtimetext = document.getElementById("durtimetext");
+    playlist_status = document.getElementById("playlist_status");
     //add event handling
     playbutton.addEventListener("click",playPause); 
-    seekslider.addEventListener("mousedown", function(event) { seeking=true; seek(event); }); 
-    seekslider.addEventListener("mousemove", function(event) { seek(event); }); 
-    
-    volumeslider.addEventListener("mousemove", setvolume);
-    //function
+    seekslider.addEventListener("mousedown", function(event){ seeking=true; seek(event); });
+	seekslider.addEventListener("mousemove", function(event){ seek(event); });
+	seekslider.addEventListener("mouseup",function(){ seeking=false; });
+	volumeslider.addEventListener("mousemove", setvolume);
+    audio.addEventListener("timeupdate", function(){ seektimeupdate(); });
+    audio.addEventListener("ended", function(){ switchTrack(); });
     function playPause() {
         if(audio.paused) {
             audio.play();
@@ -400,16 +413,38 @@ function initAudioPlayer() {
         }
     }
     //////////////////////
-    function seek(event) {
-        if(seeking) {
-            seekslider.value = event.clientX - seekslider.offsetLeft;
-            var seekto = audio.duration * (seekslider.value / 100);
-            audio.currentTime = seekto;
+    function switchTrack(){
+		if(playlist_index == (playlist.length - 1)){
+			playlist_index = 0;
+		} else {
+		    playlist_index++;	
+		}
+		playlist_status.innerHTML = "Track "+(playlist_index+1)+" - "+ playlist[playlist_index]+ext;
+		audio.src = dir+playlist[playlist_index]+ext;
+	    audio.play();
         }
+    
+    function seek(event){
+	    if(seeking){
+		    seekslider.value = event.clientX - seekslider.offsetLeft;
+	        seekto = audio.duration * (seekslider.value / 100);
+	        audio.currentTime = seekto;
+	    }
     }
-    //////////////////////
-    function setvolume(){
-        audio.volume = volumeslider.value / 100;
+	function setvolume(){
+	    audio.volume = volumeslider.value / 100;
     }
+    function seektimeupdate(){
+		var nt = audio.currentTime * (100 / audio.duration);
+		seekslider.value = nt;
+		var curmins = Math.floor(audio.currentTime / 60);
+	    var cursecs = Math.floor(audio.currentTime - curmins * 60);
+	    var durmins = Math.floor(audio.duration / 60);
+	    var dursecs = Math.floor(audio.duration - durmins * 60);
+		if(cursecs < 10){ cursecs = "0"+cursecs; }
+	    if(dursecs < 10){ dursecs = "0"+dursecs; }
+		curtimetext.innerHTML = curmins+":"+cursecs;
+	    durtimetext.innerHTML = durmins+":"+dursecs;
+	}
 }
 window.addEventListener("load", initAudioPlayer);

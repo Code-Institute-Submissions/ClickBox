@@ -631,7 +631,7 @@ input {
 }
 
 
-input.music-bar[type='range'] {
+input.seekslider[type='range'] {
     -webkit-appearance: none !important;
     background: #97F2F3;
     position: absolute;
@@ -645,7 +645,7 @@ input.music-bar[type='range'] {
     border-radius: 5px;
 }
 
-input.music-bar[type='range']::-webkit-slider-thumb {
+input.seekslider[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none !important;
     background: black;
     padding-top: 3%;
@@ -653,8 +653,35 @@ input.music-bar[type='range']::-webkit-slider-thumb {
     cursor: pointer;
     border-radius: 100%;
 }
-.music-bar-hide {
+.seekslider-hide {
     display: none;
+}
+
+div.timebox {
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+    transition-duration: 2s;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: 15%;
+}
+
+div.timebox-hide {
+    display: none;
+}
+
+h2#playlist_status {
+    width: 50%;
+    height: 10%;
+    font-family: "Oswald", sans-serif;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*------IOS Switch for Screen ------- */
