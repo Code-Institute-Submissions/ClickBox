@@ -18,6 +18,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 	</script>
+    <script type="text/javascript">
+    </script>
 
 	<title>Document</title>
 </head>
@@ -57,7 +59,7 @@
 								<div id="welcome-intro2" class="welcome-triangle-hide"></div>
 								<div id="welcome-intro3" class="welcome-triangle-hide"></div>
 								<div id="music-player" class="">
-									<div id="music-bar" class=""></div>
+									<input id="music-bar" class="music-bar-hide" type="range" min="0" max="100" value="0" step="1">
 									<div id="play" class=""></div>
 									<div id="next" class=""></div>
 									<div id="back" class=""></div>
@@ -89,7 +91,7 @@
 						</div>
 					</div>
 					<div id="volume-box" class="volume-box-hide">
-						<div id="volume-bar" class="volume-bar"></div>
+						<input id="volume-bar" class="volume-bar" orient="vertical" type="range" min="0" max="100" value="100" step="1">
 					</div>
 
 				</div>

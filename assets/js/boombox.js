@@ -28,6 +28,7 @@ $(document).ready(function () {
     });
 
 });
+
 /*----------------------------IOS Switch Screen ----------------- */
 $(document).ready(function () {
 
@@ -39,19 +40,19 @@ $(document).ready(function () {
 
             $("#screen-button").attr('class', 'screen-button');
             $("#screen-switch").attr('class', 'light-switch-screen-bg');
-            $(document.getElementById("volume-box").style.borderColor = "#8a8a8aff");
-            $(document.getElementById("volume-bar").style.backgroundColor = "#8a8a8aff");
             $("#screen-top-up").attr('class', 'screen-top-up');
             $("#screen-bottom-up").attr('class', 'screen-bottom-up');
             $("#welcome").text("BYE");
+            $("#volume-box").attr('class', 'volume-box');
+            $("#volume-bar").attr('class', 'volume-bar');
             $("#welcome-intro1").attr('class', 'welcome-triangle-hide');
             $("#welcome-intro2").attr('class', 'welcome-triangle-hide');
             $("#welcome-intro3").attr('class', 'welcome-triangle-hide');
             $("#music-player").removeClass('music-player');
-            $("#play").removeClass('play');
+            $("#play").removeClass('fas fa-play');
             $("#next").removeClass('next');
             $("#back").removeClass('back');
-            $("#music-bar").removeClass('music-bar');
+            $("#music-bar").attr('class', 'music-bar-hide');
             $("#menu-button").removeClass('menu-button');
             $("#item-1").attr('class', 'item-hide');
             $("#item-2").attr('class', 'item-hide');
@@ -76,8 +77,8 @@ $(document).ready(function () {
 
             $("#screen-button").attr('class', 'screen-button-on');
             $("#screen-switch").attr('class', 'light-switch-screen-bg-on');
-            $(document.getElementById("volume-box").style.borderColor = "#97F2F3");
-            $(document.getElementById("volume-bar").style.backgroundColor = "#97F2F3");
+            $("#volume-box").attr('class','volume-box');
+            $("#volume-bar").attr('class','volume-bar');
             $("#screen-top-up").attr('class', 'screen-top-down');
             $("#screen-bottom-up").attr('class', 'screen-bottom-down');
             $("#welcome").text("WELCOME");
@@ -99,9 +100,9 @@ function changeRed() {
     document.getElementById("speaker-small-color-changer").style.backgroundColor = "#ff8b92";
     document.getElementById("speaker-big-color-changer").style.backgroundColor = "#ff8b92";
     document.getElementById("volume-bar").style.backgroundColor = "#ff8b92";
-    document.getElementById("volume-bar").style.backgroundColor = "#ff8b92";
     document.getElementById("welcome").style.color = "#ff8b92";
     document.getElementById("clock").style.color = "#ff8b92";
+    document.getElementById("music-bar").style.backgroundColor = "#ff8b92";
     document.getElementById("click-to-enter").onmouseover = function() {
         this.style.textDecorationColor = "#ff8b92";}
     document.getElementById("click-to-enter").onmouseout = function() {
@@ -132,6 +133,7 @@ function changeBlue() {
     document.getElementById("volume-bar").style.backgroundColor = "#97F2F3";
     document.getElementById("welcome").style.color = "#97F2F3";
     document.getElementById("clock").style.color = "#97F2F3";
+    document.getElementById("music-bar").style.backgroundColor = "#97F2F3";
     document.getElementById("click-to-enter").onmouseover = function() {
         this.style.textDecorationColor = "#97F2F3";}
     document.getElementById("click-to-enter").onmouseout = function() {
@@ -152,7 +154,7 @@ function changeBlue() {
         this.style.borderColor = "#97F2F3";}
     document.getElementById("menu-button").onmouseout = function() {
         this.style.borderColor = "black";}
-}
+};
 function changeGreen() {
     document.getElementById("background").style.backgroundColor = "#d1eb79"
     document.getElementById("volume-box").style.borderColor = "#d1eb79";
@@ -161,6 +163,7 @@ function changeGreen() {
     document.getElementById("volume-bar").style.backgroundColor = "#d1eb79";
     document.getElementById("welcome").style.color = "#d1eb79";
     document.getElementById("clock").style.color = "#d1eb79";
+    document.getElementById("music-bar").style.backgroundColor = "#d1eb79";
     document.getElementById("click-to-enter").onmouseover = function() {
         this.style.textDecorationColor = "#d1eb79";}
     document.getElementById("click-to-enter").onmouseout = function() {
@@ -183,7 +186,7 @@ function changeGreen() {
         this.style.borderColor = "black";}
     
 
-}
+};
 
 function changeOrange() {
     document.getElementById("background").style.backgroundColor = "#FDCF76"
@@ -193,6 +196,7 @@ function changeOrange() {
     document.getElementById("volume-bar").style.backgroundColor = "#FDCF76";
     document.getElementById("welcome").style.color = "#FDCF76";
     document.getElementById("clock").style.color = "#FDCF76";
+    document.getElementById("music-bar").style.backgroundColor = "#FDCF76";
     document.getElementById("click-to-enter").onmouseover = function() {
         this.style.textDecorationColor = "#FDCF76";}
     document.getElementById("click-to-enter").onmouseout = function() {
@@ -213,7 +217,7 @@ function changeOrange() {
         this.style.borderColor = "#FDCF76";}
     document.getElementById("menu-button").onmouseout = function() {
         this.style.borderColor = "black";}
-}
+};
 /*----------------------------Screen Zoom Effect ----------------- */
 $(document).on('click', '#speaker-top', function () {
     $(this).addClass('screen-top-zoom').removeClass('screen-top');
@@ -244,10 +248,10 @@ $(document).on('click', '#click-to-enter', function () {
     $("#welcome-intro3").attr('class', 'welcome-triangle-hide');
     $("#menu").attr('class', 'menu');
     $("#music-player").removeClass('music-player');
-    $("#play").removeClass('play');
+    $("#play").removeClass('fas fa-play');
     $("#next").removeClass('next');
     $("#back").removeClass('back');
-    $("#music-bar").removeClass('music-bar');
+    $("#music-bar").attr('class', 'music-bar-hide');
     $("#item-2 > h1").text("Player");
     $("#item-3 > h1").text("Libary");
     $("#item-4 > h1").text("Colors");
@@ -281,10 +285,10 @@ $(document).on('click', '#menu-button', function () {
     $("#welcome-intro3").attr('class', 'welcome-triangle-hide');
     $("#menu").attr('class', 'menu');
     $("#music-player").removeClass('music-player');
-    $("#play").removeClass('play');
+    $("#play").removeClass('fas fa-play');
     $("#next").removeClass('next');
     $("#back").removeClass('back');
-    $("#music-bar").removeClass('music-bar');
+    $("#music-bar").attr('class', 'music-bar-hide');
     $("#item-2 > h1").text("Player");
     $("#item-3 > h1").text("Libary");
     $("#item-4 > h1").text("Colors");
@@ -318,10 +322,10 @@ $(document).on('click', '#item-2', function () {
     $("#welcome").text("");
     $("#click-to-enter").text("");
     $("#music-player").addClass('music-player');
-    $("#play").addClass('play');
+    $("#play").addClass('fas fa-play');
     $("#next").addClass('next');
     $("#back").addClass('back');
-    $("#music-bar").addClass('music-bar');
+    $("#music-bar").attr('class', 'music-bar');
     $("#menu-button").addClass('menu-button');
     $("#item-1").attr('class', 'item-hide');
     $("#item-2").attr('class', 'item-hide');
@@ -367,32 +371,27 @@ function startTime() {
 function checkTime(i) {
     if (i < 10) {i = "0" + i};
     return i;
-}
+};
 /*---------------------------- volume slider ----------------- */
-$("#volume").slider({
-  	min: 0,
-  	max: 100,
-  	value: 0,
-		range: "min",
-  	slide: function(event, ui) {
-    	setVolume(ui.value / 100);
-  	}
-	});
-	
-	var myMedia = document.createElement('audio');
-	$('#player').append(myMedia);
-	myMedia.id = "myMedia";
-
-	playAudio('http://emilcarlsson.se/assets/Avicii%20-%20The%20Nights.mp3', 0);
-	
-	function playAudio(fileName, myVolume) {
-			myMedia.src = fileName;
-			myMedia.setAttribute('loop', 'loop');
-    	setVolume(myVolume);
-    	myMedia.play();
-	}
-	
-	function setVolume(myVolume) {
-    var myMedia = document.getElementById('myMedia');
-    myMedia.volume = myVolume;
-	}
+var audio, playbutton, mutebutton, seek_bar; 
+function initAudioPlayer() {
+    audio = new Audio();
+    audio.src = "../assets/audio/Odessa.mp3";
+    audio.loop = true;
+    audio.play();
+    // set object reference
+    playbutton = document.getElementById("play");
+    //add event handling
+    playbutton.addEventListener("click",playPause); 
+    //function
+    function playPause() {
+        if(audio.paused) {
+            audio.play();
+            playbutton.style.color = "#97F2F3";
+        } else {
+            audio.pause();
+            playbutton.style.color = "black";
+        }
+    }
+}
+window.addEventListener("load", initAudioPlayer);
