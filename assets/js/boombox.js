@@ -45,7 +45,7 @@ $(document).ready(function () {
             $("#screen-bottom-up").attr('class', 'screen-bottom-up');
             $("#welcome").text("BYE");
             $("#welcome-intro1").attr('class', 'welcome-triangle-hide');
-            $("#welcome-intro2").attr('class', 'welcome-triangle-h7rreeeeeer');
+            $("#welcome-intro2").attr('class', 'welcome-triangle-hide');
             $("#welcome-intro3").attr('class', 'welcome-triangle-hide');
             $("#music-player").removeClass('music-player');
             $("#play").removeClass('play');
@@ -82,6 +82,9 @@ $(document).ready(function () {
             $("#screen-bottom-up").attr('class', 'screen-bottom-down');
             $("#welcome").text("WELCOME");
             $("#click-to-enter").text("Click Me");
+            $("#welcome-intro1").attr('class', '');
+            $("#welcome-intro2").attr('class', '');
+            $("#welcome-intro3").attr('class', '');
         }
 
     });
@@ -365,3 +368,31 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};
     return i;
 }
+/*---------------------------- volume slider ----------------- */
+$("#volume").slider({
+  	min: 0,
+  	max: 100,
+  	value: 0,
+		range: "min",
+  	slide: function(event, ui) {
+    	setVolume(ui.value / 100);
+  	}
+	});
+	
+	var myMedia = document.createElement('audio');
+	$('#player').append(myMedia);
+	myMedia.id = "myMedia";
+
+	playAudio('http://emilcarlsson.se/assets/Avicii%20-%20The%20Nights.mp3', 0);
+	
+	function playAudio(fileName, myVolume) {
+			myMedia.src = fileName;
+			myMedia.setAttribute('loop', 'loop');
+    	setVolume(myVolume);
+    	myMedia.play();
+	}
+	
+	function setVolume(myVolume) {
+    var myMedia = document.getElementById('myMedia');
+    myMedia.volume = myVolume;
+	}
