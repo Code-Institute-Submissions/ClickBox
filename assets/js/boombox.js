@@ -373,7 +373,7 @@ function checkTime(i) {
     return i;
 };
 /*---------------------------- volume slider ----------------- */
-var audio, playbutton, mutebutton, seek_bar; 
+var audio, playbutton, seekslider, volumeslider, seeking; 
 function initAudioPlayer() {
     audio = new Audio();
     audio.src = "../assets/audio/Odessa.mp3";
@@ -381,8 +381,14 @@ function initAudioPlayer() {
     audio.play();
     // set object reference
     playbutton = document.getElementById("play");
+    seekslider = document.getElementById("music-bar");
+    volumeslider = document.getElementById("volume-bar");
     //add event handling
     playbutton.addEventListener("click",playPause); 
+    seekslider.addEventListener("mousedown", function(event) { seeking=true; seek(event); }); 
+    seekslider.addEventListener("mousemove", function(event) { seek(event); }); 
+    
+    volumeslider.addEventListener("mousemove", setvolume);
     //function
     function playPause() {
         if(audio.paused) {
@@ -392,6 +398,18 @@ function initAudioPlayer() {
             audio.pause();
             playbutton.style.color = "black";
         }
+    }
+    //////////////////////
+    function seek(event) {
+        if(seeking) {
+            seekslider.value = event.clientX - seekslider.offsetLeft;
+            var seekto = audio.duration * (seekslider.value / 100);
+            audio.currentTime = seekto;
+        }
+    }
+    //////////////////////
+    function setvolume(){
+        audio.volume = volumeslider.value / 100;
     }
 }
 window.addEventListener("load", initAudioPlayer);
