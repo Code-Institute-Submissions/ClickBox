@@ -23,7 +23,7 @@ $(document).ready(function () {
             $("#button").attr('class', 'button-on');
             $("#tutorial").attr('class', 'tutorial-hide');
             $("#tutorial-2").attr('class', 'tutorial-2');
-            $("#tutorial").text('click here to enter the speaker! ');
+    
             $("#block-speaker").attr('class', 'block-speaker-hide');
             $(document.getElementById("background").style.backgroundColor = "#97F2F3");
             $(document.getElementById("speaker-small-color-changer").style.backgroundColor = "#97F2F3");
