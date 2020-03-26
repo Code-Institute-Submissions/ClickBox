@@ -585,7 +585,7 @@ input {
     width: 80%;
     height: 33%;
     position: absolute;
-    bottom: 10%;
+    bottom: 0%;
     transform-origin: bottom;
     transition-duration: 2s;
     left: 50%;
@@ -596,25 +596,41 @@ input {
     position: absolute;
     color: #97F2F3;
     z-index: 3;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 6.5%;
     height: 33%;
     cursor: pointer;
     font-size: 3vw;
+    text-shadow:  3px 3px 4px rgb(109, 109, 109);
+}
+
+.fa-pause {
+    position: absolute;
+    color: #97F2F3;
+    z-index: 3;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6.5%;
+    height: 33%;
+    cursor: pointer;
+    font-size: 3vw;
+    text-shadow:  3px 3px 4px rgb(109, 109, 109);
 }
 
 .next {
     background: #97F2F3;
     position: absolute;
     z-index: 3;
-    top: 50%;
+    top: 55%;
     left: 35%;
     transform: translate(-50%, -50%);
     width: 10%;
     height: 20%;
     cursor: pointer;
+    box-shadow:  3px 3px 4px rgb(109, 109, 109);
 }
 
 
@@ -622,12 +638,13 @@ input {
     background: #97F2F3;
     position: absolute;
     z-index: 3;
-    top: 50%;
+    top: 55%;
     left: 65%;
     transform: translate(-50%, -50%);
     width: 10%;
     height: 20%;
     cursor: pointer;
+    box-shadow:  3px 3px 4px rgb(109, 109, 109);
 }
 
 
@@ -643,6 +660,7 @@ input.seekslider[type='range'] {
     width: 80%;
     height: 5%;
     border-radius: 5px;
+    box-shadow:  3px 3px 4px rgb(109, 109, 109);
 }
 
 input.seekslider[type='range']::-webkit-slider-thumb {
@@ -667,6 +685,7 @@ div.timebox {
     transform: translate(-50%, -50%);
     width: 20%;
     height: 15%;
+    font-size: 1vw;
 }
 
 div.timebox-hide {
@@ -677,7 +696,8 @@ h2.playlist-name {
     width: 50%;
     height: 10%;
     font-family: "Oswald", sans-serif;
-    top: 50%;
+    font-size: 2vw;
+    top: 62%;
     position: absolute;
     text-align: center;
     left: 50%;
@@ -688,6 +708,21 @@ h2.playlist-name {
 }
 
 .playlist-name-hide {
+    display: none;
+}
+
+.thumbnail {
+    height: 33%;
+    width: 21%;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 40px rgb(32, 32, 32);
+
+}
+
+.thumbnail-hide {
     display: none;
 }
 

@@ -72,7 +72,8 @@ $(document).ready(function () {
             $("#changeOrange > h2").text("");
             $("#click-to-enter").text("");
             $("#timebox").attr('class', 'timebox-hide');
-            $("#playlist_status").attr('class', 'playlist-name-hide'); 
+            $("#playlist_status").attr('class', 'playlist-name-hide');
+            $("#thumbnail").attr('class', 'thumbnail-hide');  
 
         }
         else {
@@ -317,7 +318,8 @@ $(document).on('click', '#menu-button', function () {
     $("#changeGreen > h2").text("");
     $("#changeOrange > h2").text("");
     $("#item-1 > h1").text("HOME");
-    $("#playlist_status").attr('class', 'playlist-name-hide'); 
+    $("#playlist_status").attr('class', 'playlist-name-hide');
+    $("#thumbnail").attr('class', 'thumbnail-hide'); 
 
 });
 
@@ -341,7 +343,8 @@ $(document).on('click', '#item-2', function () {
     $("#item-4").attr('class', 'item-hide');
     $("#menu-button > h5").text("HOME");
     $("#timebox").attr('class', 'timebox');
-    $("#playlist_status").attr('class', 'playlist-name'); 
+    $("#playlist_status").attr('class', 'playlist-name');
+    $("#thumbnail").attr('class', 'thumbnail'); 
 
 });
 
@@ -390,13 +393,16 @@ function checkTime(i) {
 function initAudioPlayer() {
     var audio, playbutton, mutebutton, seekslider, volumeslider, seeking=false, seekto, curtimetext, durtimetext;
     var dir = "../assets/audio/";
+    var thumbnailDir  = "../assets/images/thumbnail/";
     var playlist = ["Feels","Odessa","Granted"];
     var playlist_index = 0;
     var ext = ".mp3";
+    var thumbnailext = ".png";
+    var thumbnail = ["lofi-1", "lofi-2", "lofi-3"];
     audio = new Audio();
     audio.src = dir+playlist[0]+ext;
     audio.loop = false;
-    audio.play();
+    audio.pause();
     playlist_status.innerHTML = "Song : " + playlist[playlist_index];
     // set object reference
     playbutton = document.getElementById("play");
@@ -430,7 +436,8 @@ function initAudioPlayer() {
 		    playlist_index++;	
 		}
 		playlist_status.innerHTML = "Song : " + playlist[playlist_index];
-		audio.src = dir+playlist[playlist_index]+ext;
+        audio.src = dir+playlist[playlist_index]+ext;
+        thumbnail.src = thumbnailDir+thumbnail[playlist_index]+thumbnailext;
 	    audio.play();
         }
     
