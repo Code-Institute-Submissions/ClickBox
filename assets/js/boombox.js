@@ -50,8 +50,8 @@ $(document).ready(function () {
             $("#welcome-intro3").attr('class', 'welcome-triangle-hide');
             $("#music-player").removeClass('music-player');
             $("#play").removeClass('fas fa-play');
-            $("#next").removeClass('next');
-            $("#back").removeClass('back');
+            $("#next").removeClass('fas fa-forward');
+            $("#back").removeClass('fas fa-backward');
             $("#seekslider").attr('class', 'seekslider-hide');
             $("#menu-button").removeClass('menu-button');
             $("#item-1").attr('class', 'item-hide');
@@ -107,6 +107,10 @@ function changeRed() {
     document.getElementById("clock").style.color = "#ff8b92";
     document.getElementById("seekslider").style.backgroundColor = "#ff8b92";
     document.getElementById("playlist_status").style.color = "#ff8b92";
+    document.getElementById("thumbnail").style.borderColor = "#ff8b92";
+    document.getElementById("back").style.color = "#ff8b92";
+    document.getElementById("next").style.color = "#ff8b92";
+    document.getElementById("play").style.color = "#ff8b92";
     document.getElementById("click-to-enter").onmouseover = function() {
         this.style.textDecorationColor = "#ff8b92";}
     document.getElementById("click-to-enter").onmouseout = function() {
@@ -139,6 +143,10 @@ function changeBlue() {
     document.getElementById("clock").style.color = "#97F2F3";
     document.getElementById("seekslider").style.backgroundColor = "#97F2F3";
     document.getElementById("playlist_status").style.color = "#97F2F3";
+    document.getElementById("thumbnail").style.borderColor = "#97F2F3";
+    document.getElementById("back").style.color = "#97F2F3";
+    document.getElementById("next").style.color = "#97F2F3";
+    document.getElementById("play").style.color = "#97F2F3";
     document.getElementById("click-to-enter").onmouseover = function() {
         this.style.textDecorationColor = "#97F2F3";}
     document.getElementById("click-to-enter").onmouseout = function() {
@@ -170,6 +178,10 @@ function changeGreen() {
     document.getElementById("clock").style.color = "#d1eb79";
     document.getElementById("seekslider").style.backgroundColor = "#d1eb79";
     document.getElementById("playlist_status").style.color = "#d1eb79";
+    document.getElementById("thumbnail").style.borderColor = "#d1eb79";
+    document.getElementById("back").style.color = "#d1eb79";
+    document.getElementById("next").style.color = "#d1eb79";
+    document.getElementById("play").style.color = "#d1eb79";
     document.getElementById("click-to-enter").onmouseover = function() {
         this.style.textDecorationColor = "#d1eb79";}
     document.getElementById("click-to-enter").onmouseout = function() {
@@ -204,6 +216,10 @@ function changeOrange() {
     document.getElementById("clock").style.color = "#FDCF76";
     document.getElementById("seekslider").style.backgroundColor = "#FDCF76";
     document.getElementById("playlist_status").style.color = "#FDCF76";
+    document.getElementById("thumbnail").style.borderColor = "#FDCF76";
+    document.getElementById("back").style.color = "#FDCF76";
+    document.getElementById("next").style.color = "#FDCF76";
+    document.getElementById("play").style.color = "#FDCF76";
     document.getElementById("click-to-enter").onmouseover = function() {
         this.style.textDecorationColor = "#FDCF76";}
     document.getElementById("click-to-enter").onmouseout = function() {
@@ -256,8 +272,8 @@ $(document).on('click', '#click-to-enter', function () {
     $("#menu").attr('class', 'menu');
     $("#music-player").removeClass('music-player');
     $("#play").removeClass('fas fa-play');
-    $("#next").removeClass('next');
-    $("#back").removeClass('back');
+    $("#next").removeClass('fas fa-forward');
+    $("#back").removeClass('fas fa-backward');
     $("#seekslider").attr('class', 'seekslider-hide');
     $("#item-2 > h1").text("Player");
     $("#item-3 > h1").text("Libary");
@@ -293,8 +309,8 @@ $(document).on('click', '#menu-button', function () {
     $("#menu").attr('class', 'menu');
     $("#music-player").removeClass('music-player');
     $("#play").removeClass('fas fa-play');
-    $("#next").removeClass('next');
-    $("#back").removeClass('back');
+    $("#next").removeClass('fas fa-forward');
+    $("#back").removeClass('fas fa-backward');
     $("#timebox").attr('class', 'timebox-hide');
     $("#seekslider").attr('class', 'seekslider-hide');
     $("#item-2 > h1").text("Player");
@@ -320,6 +336,10 @@ $(document).on('click', '#menu-button', function () {
     $("#item-1 > h1").text("HOME");
     $("#playlist_status").attr('class', 'playlist-name-hide');
     $("#thumbnail").attr('class', 'thumbnail-hide'); 
+    $("#song-picker").attr('class', 'song-picker-hide');
+    $("#libary-menu-bar").attr('class', '');
+    $("#libary-menu-bar > h2").text("");
+
 
 });
 
@@ -333,8 +353,8 @@ $(document).on('click', '#item-2', function () {
     $("#click-to-enter").text("");
     $("#music-player").addClass('music-player');
     $("#play").addClass('fas fa-play');
-    $("#next").addClass('next');
-    $("#back").addClass('back');
+    $("#next").addClass('fas fa-forward');
+    $("#back").addClass('fas fa-backward');
     $("#seekslider").attr('class', 'seekslider');
     $("#menu-button").addClass('menu-button');
     $("#item-1").attr('class', 'item-hide');
@@ -346,6 +366,24 @@ $(document).on('click', '#item-2', function () {
     $("#playlist_status").attr('class', 'playlist-name');
     $("#thumbnail").attr('class', 'thumbnail'); 
 
+});
+/*---------------------------- Song picker ----------------- */
+
+$(document).on('click', '#item-3', function () {
+    $("#song-picker").attr('class', 'song-picker');
+    $("#item-1").attr('class', 'item-hide');
+    $("#item-2").attr('class', 'item-hide');
+    $("#item-3").attr('class', 'item-hide');
+    $("#item-4").attr('class', 'item-hide');
+    $("#feels").attr('class', 'feels');
+    $("#odessa").attr('class', 'odessa');
+    $("#granted").attr('class', 'granted');
+    $("#song4").attr('class', 'song4');
+    $("#libary-menu-bar").attr('class', 'libary-menu-bar');
+    $("#libary-menu-bar > h2").text("Libary");
+    $("#menu-button > h5").text("HOME");
+    $("#item-1 > h1").text("");
+    $("#menu-button").attr('class', 'menu-button');
 });
 
 /*---------------------------- color picker ----------------- */
@@ -391,19 +429,17 @@ function checkTime(i) {
 // it is from http://www.developphp.com/video/JavaScript/Audio-Playlist-Array-Tutorial
 
 function initAudioPlayer() {
+    
     var audio, playbutton, mutebutton, seekslider, volumeslider, seeking=false, seekto, curtimetext, durtimetext;
     var dir = "../assets/audio/";
-    var thumbnailDir  = "../assets/images/thumbnail/";
     var playlist = ["Feels","Odessa","Granted"];
     var playlist_index = 0;
     var ext = ".mp3";
-    var thumbnailext = ".png";
-    var thumbnail = ["lofi-1", "lofi-2", "lofi-3"];
     audio = new Audio();
     audio.src = dir+playlist[0]+ext;
     audio.loop = false;
     audio.pause();
-    playlist_status.innerHTML = "Song : " + playlist[playlist_index];
+    playlist_status.innerHTML = playlist[playlist_index];
     // set object reference
     playbutton = document.getElementById("play");
     seekslider = document.getElementById("seekslider");
@@ -431,13 +467,12 @@ function initAudioPlayer() {
     //////////////////////
     function switchTrack(){
 		if(playlist_index == (playlist.length - 1)){
-			playlist_index = 0;
+            playlist_index = 0;
 		} else {
-		    playlist_index++;	
+            playlist_index++;
 		}
-		playlist_status.innerHTML = "Song : " + playlist[playlist_index];
+		playlist_status.innerHTML = playlist[playlist_index];
         audio.src = dir+playlist[playlist_index]+ext;
-        thumbnail.src = thumbnailDir+thumbnail[playlist_index]+thumbnailext;
 	    audio.play();
         }
     
