@@ -30,7 +30,11 @@
 			<div class="light-switch-bg">
 				<div id="button" class="button"></div>
 			</div>
+			<div id="tutorial" class="tutorial">Hi There! 
+            Click this button to start  <i class="fas fa-arrow-circle-right"></i></div>
+            <div id="tutorial-2" class="tutorial">Click here to enter the speaker  <i class="fas fa-arrow-circle-right"></i></div>
 		</div>
+        <div id="block-speaker" class="block-speaker"></div>
 		<div id="speaker">
 			<div id="speaker-top" class="screen-top">
 				<div id="inner-screen-area" class="inner-screen-area-hide">
@@ -71,88 +75,85 @@
 								</div>
 							</div>
 							<div id="item-3" class="item-hide">
-                                <h1 class="item-text"></h1>
+								<h1 class="item-text"></h1>
 								<div id="libary-menu-bar" class="">
 									<h2 class="menu-button-text"></h2>
 								</div>
 								<div id="song-picker" class="">
-									<div id="feels" class="">
-                                        <div class="songNum"></div>
+									<div id="feels" class="" onclick="playfeels()">
 										<h2 class="song-text"></h2>
-                                        <img src="../assets/images/thumbnail/lofi-1.png" class="thumbnail-song1">
+										<img id="thumbnail-1" src="../assets/images/thumbnail/lofi-1.png" class="thumbnail-song1-hide">
 									</div>
-									<div id="odessa" class="">
-                                        <div class="songNum"></div>
-										<h2 class="song-text"></h2>
-                                        <img src="../assets/images/thumbnail/lofi-2.png" class="thumbnail-song1">
+										<div id="odessa" class="" onclick="playodessa()">
+											<h2 class="song-text"></h2>
+											<img id="thumbnail-2" src="../assets/images/thumbnail/lofi-2.png" class="thumbnail-song1-hide">
 									</div>
-									<div id="granted" class="">
-                                        <div class="songNum">hello </div>
-										<h2 class="song-text"></h2>
-                                        <img src="../assets/images/thumbnail/lofi-3.png" class="thumbnail-song1">
+											<div id="granted" class="" onclick="playgranted()">
+												<h2 class="song-text"></h2>
+												<img id="thumbnail-3" src="../assets/images/thumbnail/lofi-3.png" class="thumbnail-song1-hide">
 									</div>
-									<div id="song4" class="">
-                                        <div class="songNum"></div>
-										<h2 class="song-text"></h2>
-                                        <img src="../assets/images/thumbnail/lofi-4.png" class="thumbnail-song1">
+												<div id="song4" class="">
+													<h2 class="song-text"></h2>
+													<img id="thumbnail-4" src="../assets/images/thumbnail/lofi-4.png" class="thumbnail-song1-hide">
+									</div>
+												</div>
+											</div>
+											<div id="item-4" class="item-hide">
+												<h1 class="item-text"></h1>
+												<div id="color-menu-bar" class="">
+													<h2 class="menu-button-text"></h2>
+												</div>
+												<div id="color-picker" class="">
+													<div id="changeRed" class="" onclick="changeRed()">
+														<h2 class="color-text"></h2>
+													</div>
+													<div id="changeBlue" class="" onclick="changeBlue()">
+														<h2 class="color-text"></h2>
+													</div>
+													<div id="changeGreen" class="" onclick="changeGreen()">
+														<h2 class="color-text"></h2>
+													</div>
+													<div id="changeOrange" class="" onclick="changeOrange()">
+														<h2 class="color-text"></h2>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="volume-box" class="volume-box-hide">
+										<input id="volume-bar" class="volume-bar" orient="vertical" type="range" min="0" max="100" value="100" step="1">
+					</div>
+
 									</div>
 								</div>
-							</div>
-							<div id="item-4" class="item-hide">
-								<h1 class="item-text"></h1>
-								<div id="color-menu-bar" class="">
-									<h2 class="menu-button-text"></h2>
-								</div>
-								<div id="color-picker" class="">
-									<div id="changeRed" class="" onclick="changeRed()">
-										<h2 class="color-text"></h2>
+								<div id="speaker-box" class="speaker-box-show">
+									<div id="speaker-power">
 									</div>
-									<div id="changeBlue" class="" onclick="changeBlue()">
-										<h2 class="color-text"></h2>
+									<div class="speaker-small-frame">
+										<div class="speaker-small-ring">
+											<div id="speaker-small-color-changer">
+												<div class="speaker-small-center">
+
+												</div>
+											</div>
+										</div>
 									</div>
-									<div id="changeGreen" class="" onclick="changeGreen()">
-										<h2 class="color-text"></h2>
-									</div>
-									<div id="changeOrange" class="" onclick="changeOrange()">
-										<h2 class="color-text"></h2>
+									<div class="speaker-big-frame">
+										<div class="speaker-big-ring">
+											<div id="speaker-big-color-changer">
+												<div class="speaker-big-center">
+
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div id="volume-box" class="volume-box-hide">
-						<input id="volume-bar" class="volume-bar" orient="vertical" type="range" min="0" max="100" value="100" step="1">
-					</div>
-
-					</div>
-				</div>
-				<div id="speaker-box" class="speaker-box-show">
-					<div id="speaker-power">
-					</div>
-					<div class="speaker-small-frame">
-						<div class="speaker-small-ring">
-							<div id="speaker-small-color-changer">
-								<div class="speaker-small-center">
-
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="speaker-big-frame">
-						<div class="speaker-big-ring">
-							<div id="speaker-big-color-changer">
-								<div class="speaker-big-center">
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="../assets/js/boombox.js"></script>
-		<script src="https://code.jquery.com/jquery-3.4.1.js"
-			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+						<script src="../assets/js/boombox.js"></script>
+						<script src="https://code.jquery.com/jquery-3.4.1.js"
+							integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+						</script>
 
 </body>
 

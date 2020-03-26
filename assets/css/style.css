@@ -6,7 +6,6 @@ input {
     background-color: #8a8a8aff;    
     height:100vh;
     z-index: 0;
-    position: relative;
     transition-duration: 1s;
 }
 
@@ -15,6 +14,60 @@ input {
     background-color: #97F2F3;
     transition-duration: 1s;
 }
+
+.tutorial {
+    background-color: #97F2F3;
+    position: fixed;
+    top: 2.5%;
+    right: 4%;
+    width: 30vw;
+    height: 5%;
+    border-radius: 25vw;
+    font-family: "Oswald", sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    margin:  0 auto;
+    box-shadow: inset 0px 0px 5px 5px#8a8a8aff;
+}
+
+.tutorial-hide{
+    display: none;
+}
+
+.tutorial-2 {
+    position: absolute;
+    top: 12.5%;
+    right: 54%;
+    transform: translate(-50%,-50%) rotate(15deg);
+    width: 17%;
+    height: 5%;
+    border-radius: 25vw;
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5vw;
+    text-align: center;
+    margin: 0 auto;
+    text-shadow: 2px 2px 3px rgb(85, 85, 85);
+}
+
+.tutorial-2-hide {
+    display: none;
+}
+
+.block-speaker {
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgba(204, 204, 204, 0);
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    height: 85%;
+}
+
+.block-speaker-hide {
+    display: none;
+    height: 0;
+}
+
 
  /*----------------------------IOS Switch background ----------------- */
 
@@ -25,7 +78,7 @@ input {
     float: right;
     margin-top: 20px;
     box-shadow: inset 0px 0px 3px 0px rgb(109, 108, 108), 0px 0px 1px 0px rgb(109, 108, 108);
-    margin-right: 20px;
+    margin-right: 1%;
     border-radius:  50px;
 }
 
@@ -494,8 +547,14 @@ input {
     cursor: pointer;
     top:0%;
     position: absolute;
-    border-bottom: solid 2px #97F2F3;
+    border-bottom: solid 2px #ebebeb;
 }
+
+.feels:hover {
+background-color: #ebebeb;
+font-size: 3vw
+}
+
 .odessa {
     width: 100%;
     height: 25%;
@@ -503,8 +562,14 @@ input {
     cursor: pointer;
     top: 25%;
     position: absolute;
-    border-bottom: solid 2px #97F2F3;
+    border-bottom: solid 2px #ebebeb;
 }
+
+.odessa:hover {
+background-color: #ebebeb;
+font-size: 3vw
+}
+
 .granted {
     width: 100%;
     height: 25%;
@@ -512,8 +577,14 @@ input {
     cursor: pointer;
     top: 50%;
     position: absolute;
-    border-bottom: solid 2px #97F2F3;
+    border-bottom: solid 2px #ebebeb;
 }
+
+.granted:hover {
+background-color: #ebebeb;
+font-size: 3vw
+}
+
 .song4 {
     width: 100%;
     height: 25%;
@@ -523,10 +594,20 @@ input {
     position: absolute;
 }
 
+.song4:hover {
+    background-color: #ebebeb;
+    font-size: 3vw
+}
+
 .song-text {
-    text-align: center;
     position: absolute;
-    left:50%;
+    left:18%;
+    top: 50%;
+    font-size: 1.8vw;
+    transform: translate(0%,-50%);
+    font-family: "Roboto",sans-serif;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .thumbnail-song1 {
@@ -535,7 +616,10 @@ input {
     position: absolute;
     top: 50%;
     transform: translate(0%,-50%);
-    border-radius: 100%;
+}
+
+.thumbnail-song1-hide {
+    display: none;
 }
 
 .songNum {
@@ -1156,3 +1240,18 @@ input.volume-bar[type='range']::-webkit-slider-thumb {
     height: 33%;
 }
 
+.tutorial {
+    background-color: #97F2F3;
+    position: fixed;
+    top: 2.5%;
+    right: 4%;
+    width: 40vw;
+    height: 5%;
+    border-radius: 25vw;
+    font-family: "Oswald", sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    margin:  0 auto;
+    box-shadow: inset 0px 0px 5px 5px#8a8a8aff;
+    padding: 5%;
+}
