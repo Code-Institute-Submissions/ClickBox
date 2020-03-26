@@ -432,7 +432,7 @@ $(document).on('click', '#item-3', function () {
     $("#feels").attr('class', 'feels');
     $("#odessa").attr('class', 'odessa');
     $("#granted").attr('class', 'granted');
-    $("#song4").attr('class', 'song4');
+    $("#pinkcloud").attr('class', 'pinkcloud');
     $("#libary-menu-bar").attr('class', 'libary-menu-bar');
     $("#libary-menu-bar > h2").text("Libary");
     $("#menu-button > h5").text("HOME");
@@ -441,7 +441,7 @@ $(document).on('click', '#item-3', function () {
     $("#feels > h2").text("Feels - Laxcity");
     $("#odessa > h2").text("Odessa - Sonns");
     $("#granted > h2").text("Granted - Laxcity");
-    $("#song4 > h2").text("Vesky - Embrace");
+    $("#pinkcloud > h2").text("Hittin Hard - Pinkcloud)");
     $("#thumbnail-1").attr('class', 'thumbnail-song1');
     $("#thumbnail-2").attr('class', 'thumbnail-song1');
     $("#thumbnail-3").attr('class', 'thumbnail-song1');
@@ -497,11 +497,12 @@ function initAudioPlayer() {
 
     var audio, playbutton, seekslider, playfeels, playodessa, playgranted, volumeslider, seeking = false, seekto, curtimetext, durtimetext;
     var dir = "../assets/audio/";
-    var playlist = ["Feels", "Odessa", "Granted"];
-    var playlist_index = 0;
+    var dirT = "../assets/"
+    var playlist = ["Feels - Laxcity", "Odessa - Sonns", "Granted - Laxcity", "Hittin Hard - Pinkcloud"];
+    var playlist_index = 3;
     var ext = ".mp3";
     audio = new Audio();
-    audio.src = dir + playlist[0] + ext;
+    audio.src = dir + playlist[3] + ext;
     audio.loop = false;
     audio.pause();
     playlist_status.innerHTML = playlist[playlist_index];
