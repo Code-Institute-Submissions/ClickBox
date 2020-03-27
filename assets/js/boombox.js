@@ -16,6 +16,9 @@ $(document).ready(function () {
             $(document.getElementById("speaker-big-color-changer").style.backgroundColor = "#8d8d8d");
             $(document.getElementById("speaker-power").style.borderColor = "gray");
             $("#tutorial-2").attr('class', 'tutorial-2-hide');
+            $("#tutorial").attr('class', 'tutorial-hide');
+            $("#block-speaker").attr('class', 'block-speaker-hide');
+            
 
         }
         else {
