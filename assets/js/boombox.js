@@ -465,6 +465,14 @@ $(document).on('click', '#item-4', function () {
     $("#item-1 > h1").text("");
     $("#menu-button").attr('class', 'menu-button');
 });
+/*var color = ["#97F2F3","#d1eb79","#FDCF76","#ff8b92","#97F2F3","#d1eb79","#FDCF76","#ff8b92","#97F2F3","#d1eb79","#FDCF76","#ff8b92","#97F2F3","#d1eb79","#FDCF76","#ff8b92","#97F2F3"];
+var i = 0;
+document.getElementById("title").addEventListener("mouseover", function () {
+    i = 0 < color.length ? ++i : 0;
+document.getElementById("title").style.backgroundColor = color[i];
+document.getElementById("tutorial").style.color = color[i];
+document.getElementById("block-speaker").style.color = color[i];
+}) */
 
 /*---------------------------- clock ----------------- */
 // This is code from W3schools.com 
@@ -489,7 +497,6 @@ function initAudioPlayer() {
 
     var audio, playbutton, seekslider, mutebutton, playfeels, playodessa, playgranted, volumeslider, seeking = false, seekto, curtimetext, durtimetext;
     var dir = "../assets/audio/";
-    var dirT = "../assets/"
     var playlist = ["Feels - Laxcity", "Odessa - Sonns", "Granted - Laxcity", "Hittin Hard - Pinkcloud"];
     var playlist_index = 0;
     var ext = ".mp3";
