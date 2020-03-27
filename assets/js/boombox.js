@@ -119,8 +119,6 @@ function changeRed() {
     document.getElementById("seekslider").style.backgroundColor = "#ff8b92";
     document.getElementById("playlist_status").style.color = "#ff8b92";
     document.getElementById("thumbnail").style.borderColor = "#ff8b92";
-    document.getElementById("back").style.color = "#ff8b92";
-    document.getElementById("next").style.color = "#ff8b92";
     document.getElementById("play").style.color = "#ff8b92";
     document.getElementById("click-to-enter").onmouseover = function () {
         this.style.textDecorationColor = "#ff8b92";
@@ -165,8 +163,6 @@ function changeBlue() {
     document.getElementById("seekslider").style.backgroundColor = "#97F2F3";
     document.getElementById("playlist_status").style.color = "#97F2F3";
     document.getElementById("thumbnail").style.borderColor = "#97F2F3";
-    document.getElementById("back").style.color = "#97F2F3";
-    document.getElementById("next").style.color = "#97F2F3";
     document.getElementById("play").style.color = "#97F2F3";
     document.getElementById("click-to-enter").onmouseover = function () {
         this.style.textDecorationColor = "#97F2F3";
@@ -210,8 +206,6 @@ function changeGreen() {
     document.getElementById("seekslider").style.backgroundColor = "#d1eb79";
     document.getElementById("playlist_status").style.color = "#d1eb79";
     document.getElementById("thumbnail").style.borderColor = "#d1eb79";
-    document.getElementById("back").style.color = "#d1eb79";
-    document.getElementById("next").style.color = "#d1eb79";
     document.getElementById("play").style.color = "#d1eb79";
     document.getElementById("click-to-enter").onmouseover = function () {
         this.style.textDecorationColor = "#d1eb79";
@@ -258,8 +252,6 @@ function changeOrange() {
     document.getElementById("seekslider").style.backgroundColor = "#FDCF76";
     document.getElementById("playlist_status").style.color = "#FDCF76";
     document.getElementById("thumbnail").style.borderColor = "#FDCF76";
-    document.getElementById("back").style.color = "#FDCF76";
-    document.getElementById("next").style.color = "#FDCF76";
     document.getElementById("play").style.color = "#FDCF76";
     document.getElementById("click-to-enter").onmouseover = function () {
         this.style.textDecorationColor = "#FDCF76";

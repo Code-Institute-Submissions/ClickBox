@@ -794,6 +794,7 @@ font-size: 3vw
     text-shadow:  3px 3px 4px rgb(109, 109, 109);
 }
 
+/*
 .fa-backward {
     color: #97F2F3;
     position: absolute;
@@ -822,7 +823,7 @@ font-size: 3vw
     font-size: 2vw;
     text-shadow:  3px 3px 4px rgb(109, 109, 109);
 }
-
+*/
 
 input.seekslider[type='range'] {
     -webkit-appearance: none !important;
