@@ -495,14 +495,14 @@ function checkTime(i) {
 
 function initAudioPlayer() {
 
-    var audio, playbutton, seekslider, playfeels, playodessa, playgranted, volumeslider, seeking = false, seekto, curtimetext, durtimetext;
+    var audio, playbutton, seekslider, mutebutton, playfeels, playodessa, playgranted, volumeslider, seeking = false, seekto, curtimetext, durtimetext;
     var dir = "../assets/audio/";
     var dirT = "../assets/"
     var playlist = ["Feels - Laxcity", "Odessa - Sonns", "Granted - Laxcity", "Hittin Hard - Pinkcloud"];
-    var playlist_index = 3;
+    var playlist_index = 0;
     var ext = ".mp3";
     audio = new Audio();
-    audio.src = dir + playlist[3] + ext;
+    audio.src = dir + playlist[0] + ext;
     audio.loop = false;
     audio.pause();
     playlist_status.innerHTML = playlist[playlist_index];
@@ -511,6 +511,7 @@ function initAudioPlayer() {
     seekslider = document.getElementById("seekslider");
     volumeslider = document.getElementById("volume-bar");
     curtimetext = document.getElementById("curtimetext");
+    mutebutton = document.getElementById("mutebutton");
     durtimetext = document.getElementById("durtimetext");
     playlist_status = document.getElementById("playlist_status");
     playfeels = document.getElementById("feels");
@@ -518,6 +519,7 @@ function initAudioPlayer() {
     playgranted = document.getElementById("granted");
     //add event handling
     playfeels.addEventListener("click", playPause);
+    mutebutton.addEventListener("click", mute);
     playodessa.addEventListener("click", playPause);
     playgranted.addEventListener("click", playPause);
     playbutton.addEventListener("click", playPause);
@@ -536,6 +538,15 @@ function initAudioPlayer() {
             playbutton.style.color = "black";
         }
     }
+    function mute(){
+		if(audio.muted){
+		    audio.muted = false;
+		    mutebutton.style.color = "#cccccc";
+	    } else {
+		    audio.muted = true;
+		    mutebutton.style.color = "red";
+	    }
+	}
     //////////////////////
     function switchTrack() {
         if (playlist_index == (playlist.length - 1)) {

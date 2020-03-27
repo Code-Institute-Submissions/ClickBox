@@ -841,7 +841,7 @@ input.seekslider[type='range'] {
 
 input.seekslider[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none !important;
-    background: black;
+    background: rgb(82, 82, 82);
     padding-top: 3%;
     width: 1vw;
     cursor: pointer;
@@ -969,7 +969,7 @@ h2.playlist-name {
 
 /*--------------Volume Area --------------- */
 #volume-box {
-    height: 5%;
+    height: 7%;
     width: 30%;
     border: solid 2px #8a8a8aff;
     background-color: #3b3b3b;
@@ -986,8 +986,8 @@ h2.playlist-name {
 }
 
 input.volume-bar {
-    height:10%;
-    width: 85%;
+    height:15%;
+    width: 76%;
     background-color: #8a8a8aff;
     border-radius: 50px;
     position: absolute;
@@ -1000,7 +1000,7 @@ input.volume-bar {
 input.volume-bar[type='range'] {
     -webkit-appearance: none !important;
     height:10%;
-    width: 85%;
+    width: 76%;
     background-color: #8a8a8aff;
     border-radius: 50px;
     position: absolute;
@@ -1014,10 +1014,29 @@ input.volume-bar[type='range'] {
 input.volume-bar[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none !important;
     background: #d9d9d9ff;
-    padding-top: 6.5%;
+    padding-top: 7%;
     width: 1vw;
     cursor: pointer;
     border-radius: 100%;
+}
+
+.fa-volume-mute {
+    position: absolute;
+    font-size: 1.25vw;
+    color:#cccccc;
+    top: 51%;
+    left: 6.5%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.fa-volume-up {
+    position: absolute;
+    font-size: 1.25vw;
+    color:#cccccc;
+    top: 51%;
+    right: -1%;
+    transform: translate(-50%, -50%);
 }
 
 
