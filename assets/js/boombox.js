@@ -88,6 +88,7 @@ $(document).ready(function () {
             $("#libary-menu-bar").attr('class', '');
             $("#libary-menu-bar > h2").text("");
             $("#thumbnail").attr('class', 'thumbnail-song1-hide');
+            
 
         }
         else {
@@ -468,14 +469,7 @@ $(document).on('click', '#item-4', function () {
     $("#item-1 > h1").text("");
     $("#menu-button").attr('class', 'menu-button');
 });
-/*var color = ["#97F2F3","#d1eb79","#FDCF76","#ff8b92","#97F2F3","#d1eb79","#FDCF76","#ff8b92","#97F2F3","#d1eb79","#FDCF76","#ff8b92","#97F2F3","#d1eb79","#FDCF76","#ff8b92","#97F2F3"];
-var i = 0;
-document.getElementById("title").addEventListener("mouseover", function () {
-    i = 0 < color.length ? ++i : 0;
-document.getElementById("title").style.backgroundColor = color[i];
-document.getElementById("tutorial").style.color = color[i];
-document.getElementById("block-speaker").style.color = color[i];
-}) */
+
 
 /*---------------------------- clock ----------------- */
 // This is code from W3schools.com 
@@ -520,10 +514,7 @@ function initAudioPlayer() {
     playodessa = document.getElementById("odessa");
     playgranted = document.getElementById("granted");
     //add event handling
-    playfeels.addEventListener("click", playPause);
     mutebutton.addEventListener("click", mute);
-    playodessa.addEventListener("click", playPause);
-    playgranted.addEventListener("click", playPause);
     playbutton.addEventListener("click", playPause);
     seekslider.addEventListener("mousedown", function (event) { seeking = true; seek(event); });
     seekslider.addEventListener("mousemove", function (event) { seek(event); });
