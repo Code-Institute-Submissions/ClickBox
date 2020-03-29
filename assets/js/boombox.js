@@ -1,4 +1,3 @@
-
 /*----------------------------IOS Switch Background ----------------- */
 $(document).ready(function () {
 
@@ -126,36 +125,36 @@ function changeRed() {
     document.getElementById("play").style.color = "#ff8b92";
     document.getElementById("click-to-enter").onmouseover = function () {
         this.style.textDecorationColor = "#ff8b92";
-    }
+    };
     document.getElementById("click-to-enter").onmouseout = function () {
         this.style.backgroundColor = "transparent";
-    }
+    };
     document.getElementById("item-2").onmouseover = function () {
         this.style.backgroundColor = "#ff8b92";
-    }
+    };
     document.getElementById("item-2").onmouseout = function () {
         this.style.backgroundColor = "white";
-    }
+    };
     document.getElementById("item-3").onmouseover = function () {
         this.style.backgroundColor = "#ff8b92";
-    }
+    };
     document.getElementById("item-3").onmouseout = function () {
         this.style.backgroundColor = "white";
-    }
+    };
     document.getElementById("item-4").onmouseover = function () {
         this.style.backgroundColor = "#ff8b92";
-    }
+    };
     document.getElementById("item-4").onmouseout = function () {
         this.style.backgroundColor = "white";
-    }
+    };
     document.getElementById("menu-button").onmouseover = function () {
         this.style.borderColor = "#ff8b92";
-    }
+    };
     document.getElementById("menu-button").onmouseout = function () {
         this.style.borderColor = "black";
-    }
+    };
 
-};
+}
 function changeBlue() {
     document.getElementById("background").style.backgroundColor = "#97F2F3";
     document.getElementById("volume-box").style.borderColor = "#97F2F3";
@@ -170,37 +169,37 @@ function changeBlue() {
     document.getElementById("play").style.color = "#97F2F3";
     document.getElementById("click-to-enter").onmouseover = function () {
         this.style.textDecorationColor = "#97F2F3";
-    }
+    };
     document.getElementById("click-to-enter").onmouseout = function () {
         this.style.backgroundColor = "transparent";
-    }
+    };
     document.getElementById("item-2").onmouseover = function () {
         this.style.backgroundColor = "#97F2F3";
-    }
+    };
     document.getElementById("item-2").onmouseout = function () {
         this.style.backgroundColor = "white";
-    }
+    };
     document.getElementById("item-3").onmouseover = function () {
         this.style.backgroundColor = "#97F2F3";
-    }
+    };
     document.getElementById("item-3").onmouseout = function () {
         this.style.backgroundColor = "white";
-    }
+    };
     document.getElementById("item-4").onmouseover = function () {
         this.style.backgroundColor = "#97F2F3";
-    }
+    };
     document.getElementById("item-4").onmouseout = function () {
         this.style.backgroundColor = "white";
-    }
+    };
     document.getElementById("menu-button").onmouseover = function () {
         this.style.borderColor = "#97F2F3";
-    }
+    };
     document.getElementById("menu-button").onmouseout = function () {
         this.style.borderColor = "black";
-    }
-};
+    };
+}
 function changeGreen() {
-    document.getElementById("background").style.backgroundColor = "#d1eb79"
+    document.getElementById("background").style.backgroundColor = "#d1eb79";
     document.getElementById("volume-box").style.borderColor = "#d1eb79";
     document.getElementById("speaker-small-color-changer").style.backgroundColor = "#d1eb79";
     document.getElementById("speaker-big-color-changer").style.backgroundColor = "#d1eb79";
@@ -213,40 +212,40 @@ function changeGreen() {
     document.getElementById("play").style.color = "#d1eb79";
     document.getElementById("click-to-enter").onmouseover = function () {
         this.style.textDecorationColor = "#d1eb79";
-    }
+    };
     document.getElementById("click-to-enter").onmouseout = function () {
         this.style.backgroundColor = "transparent";
-    }
+    };
     document.getElementById("item-2").onmouseover = function () {
         this.style.backgroundColor = "#d1eb79";
-    }
+    };
     document.getElementById("item-2").onmouseout = function () {
         this.style.backgroundColor = "white";
-    }
+    };
     document.getElementById("item-3").onmouseover = function () {
         this.style.backgroundColor = "#d1eb79";
-    }
+    };
     document.getElementById("item-3").onmouseout = function () {
         this.style.backgroundColor = "white";
-    }
+    };
     document.getElementById("item-4").onmouseover = function () {
         this.style.backgroundColor = "#d1eb79";
-    }
+    };
     document.getElementById("item-4").onmouseout = function () {
         this.style.backgroundColor = "white";
-    }
+    };
     document.getElementById("menu-button").onmouseover = function () {
         this.style.borderColor = "#d1eb79";
-    }
+    };
     document.getElementById("menu-button").onmouseout = function () {
         this.style.borderColor = "black";
-    }
+    };
 
 
-};
+}
 
 function changeOrange() {
-    document.getElementById("background").style.backgroundColor = "#FDCF76"
+    document.getElementById("background").style.backgroundColor = "#FDCF76";
     document.getElementById("volume-box").style.borderColor = "#FDCF76";
     document.getElementById("speaker-small-color-changer").style.backgroundColor = "#FDCF76";
     document.getElementById("speaker-big-color-changer").style.backgroundColor = "#FDCF76";
@@ -259,35 +258,35 @@ function changeOrange() {
     document.getElementById("play").style.color = "#FDCF76";
     document.getElementById("click-to-enter").onmouseover = function () {
         this.style.textDecorationColor = "#FDCF76";
-    }
+    };
     document.getElementById("click-to-enter").onmouseout = function () {
         this.style.backgroundColor = "transparent";
-    }
+    };
     document.getElementById("item-2").onmouseover = function () {
         this.style.backgroundColor = "#FDCF76";
-    }
+    };
     document.getElementById("item-2").onmouseout = function () {
         this.style.backgroundColor = "white";
-    }
+    };
     document.getElementById("item-3").onmouseover = function () {
         this.style.backgroundColor = "#FDCF76";
-    }
+    };
     document.getElementById("item-3").onmouseout = function () {
         this.style.backgroundColor = "white";
-    }
+    };
     document.getElementById("item-4").onmouseover = function () {
         this.style.backgroundColor = "#FDCF76";
-    }
+    };
     document.getElementById("item-4").onmouseout = function () {
         this.style.backgroundColor = "white";
-    }
+    };
     document.getElementById("menu-button").onmouseover = function () {
         this.style.borderColor = "#FDCF76";
-    }
+    };
     document.getElementById("menu-button").onmouseout = function () {
         this.style.borderColor = "black";
-    }
-};
+    };
+}
 /*----------------------------Screen Zoom Effect ----------------- */
 $(document).on('click', '#speaker-top', function () {
     $(this).addClass('screen-top-zoom').removeClass('screen-top');
@@ -485,7 +484,7 @@ function startTime() {
 function checkTime(i) {
     if (i < 10) { i = "0" + i };
     return i;
-};
+}
 /*---------------------------- Music player  ----------------- */
 // This is code i learned and used the parts of the code for my music player
 // it is from http://www.developphp.com/video/JavaScript/Audio-Playlist-Array-Tutorial
@@ -573,18 +572,6 @@ function initAudioPlayer() {
         if (dursecs < 10) { dursecs = "0" + dursecs; }
         curtimetext.innerHTML = curmins + ":" + cursecs;
         durtimetext.innerHTML = durmins + ":" + dursecs;
-    }
-    function playfeels() {
-        audio.src = dir + playlist[0] + ext;
-        audio.loop = false;
-    }
-    function playodessa() {
-        audio.src = dir + playlist[1] + ext;
-        audio.loop = false;
-    }
-    function playgranted() {
-        audio.src = dir + playlist[2] + ext;
-        audio.loop = false;
     }
 
 
