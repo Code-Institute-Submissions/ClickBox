@@ -22,6 +22,8 @@ background. This website is a music player with a twist and also a show at a int
 ### Existing Features
 - Music player - allows tghe user to listen to a playlist of songs see how long left. (only 4 used now*) 
 
+- music timer - allows the user to see how long is left in the song.
+
 - Buttons/Switches - Allows the user to alter the current page or color of all the items on screen.
 
 - Multi layered - allows the user to view and interact multiple screens and views without scrolling or having to load another page. 
@@ -34,6 +36,7 @@ background. This website is a music player with a twist and also a show at a int
 
 - mute button - allows the user to compleatly mute the audio with a simple click and 
 
+- color switching - allows the user to alter the colors of the nearly each div/button of the whole website. 
 ### Features Left to Implement
 
 - Shuffle button - This would allow the user to suffle the list of music to change up the experience.
