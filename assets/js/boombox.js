@@ -38,7 +38,7 @@ $(document).ready(function () {
 
 });
 
-/*----------------------------IOS Switch Screen ----------------- */
+/*----------------------------IOS Power Switch Screen ----------------- */
 $(document).ready(function () {
 
     $("#screen-button").click(function () {
@@ -110,7 +110,7 @@ $(document).ready(function () {
 });
 
 
-/*----------------------------color Switch Screen ----------------- */
+/*----------------------------color Switch Buttons ----------------- */
 function changeRed() {
     document.getElementById("background").style.backgroundColor = "#ff8b92";
     document.getElementById("volume-box").style.borderColor = "#ff8b92";
