@@ -1,12 +1,16 @@
 # ClickBox
 
-What this website is an interactive speaker. I came up with this idea because i thought, speakers used to be things u pysicly interact with (screen/buttons/etc..) 
-However now speakers are just a thing you connect your phone with and use through there. I love building somthing that functions like an engine/legos/buildings.
-this was why i wanted to make my own User Interface. I wanted to show that a website alway have to give the user information or anything. At times like this 
-we all live at 1000KPH sometimes it okay just to sit back and mess around with somthing with no real end goal. Plus what better time to make a pointless thing
-to pass the time then during this lockdown right?? To come up with this project I combined two things I like, Music and Minamalistic designs. I spend a lot of 
-time listening to music because it is quite important to me and when i was younger I always enjoyed interactive websites that are just made for no point but to 
-satisfy the user with visuals and satisfying clicks. This project/website could be used for someone who just wants a background on their laptop while they play 
+The website was designed to be an interactive speaker. The idea of the design was created throught a thought process which stated; speakers used to be interactive objects 
+that needed physical inetraction in order to change setting. This means, buttons (pause/start, next/previous, choose a song, etc.) However, nowadays, speakers are just objects that
+can be fully controlled by a device connected to it. This means there is no longer any physical interaction with speakers other than the on/off switch. Building something that is
+able to fully function through the physical touch is something I enjoy doing, as I see meaning in it. This is why I wanted to make my own User Interface (UI).
+I wanted to show that a user doesn't need to gain knowledge from a website. I wanted to show that a website could simply be for enjoyment and entertainment. At current times, 
+we all live at 1000KPH, and sometimes it is okay just to sit back, relax, and mess around with something with no real end goal. This point in time, where everyone is to stay at home,
+and do nothing all day is a great time so create a website that allows people to relax and have fun. 
+
+In order to come up with this idea, two things were combined, my love for music and minimalistic designs. I spend a lot of time listening to music as it is very important to me,
+as well as when I was younger I always enjoyed interactive websites that are made to satisfy the user with visuals and satisfying clicks. This project/website could be used for 
+someone who just wants a background on their laptop while they play 
 music or just for someone to mess around with. 
  
 ## UX
@@ -32,11 +36,11 @@ background. This website is a music player with a twist and also a show at a int
 
 - Clock - allows the users own time to be displayed on the screen. 
 
-- tutorial - helps the user to know what to click when the page is loaded.
+- Tutorial - helps the user to know what to click when the page is loaded.
 
-- mute button - allows the user to compleatly mute the audio with a simple click and 
+- Mute button - allows the user to compleatly mute the audio with a simple click and 
 
-- color switching - allows the user to alter the colors of the nearly each div/button of the whole website. 
+- Color switching - allows the user to alter the colors of the nearly each div/button of the whole website. 
 ### Features Left to Implement
 
 - Shuffle button - This would allow the user to suffle the list of music to change up the experience.
