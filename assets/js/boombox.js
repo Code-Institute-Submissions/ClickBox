@@ -492,7 +492,7 @@ function checkTime(i) {
 function initAudioPlayer() {
 
     var audio, playbutton, seekslider, mutebutton, playfeels, playodessa, playgranted, volumeslider, seeking = false, seekto, curtimetext, durtimetext;
-    var dir = "../assets/audio/";
+    var dir = "assets/audio/";
     var playlist = ["Feels - Laxcity", "Odessa - Sonns", "Granted - Laxcity", "Hittin Hard - Pinkcloud"];
     var playlist_index = 0;
     var ext = ".mp3";

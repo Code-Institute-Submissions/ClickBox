@@ -60,7 +60,7 @@ able to have their own music and not have it just be my own choice, as everyone 
 
 ## Testing
 
-I had tested my website on different screen sizes to make sure it all fits well together whatever device the user is using. however i stuck more to the largr computer screen size.
+I had tested my website on different screen sizes to make sure it all fits well together whatever device the user is using. however i stuck more to the larger computer screen size.
 This is because most people just use apps for their music on phones. 
 
 I had some issues with speaker sizing for mobile versions because of the thin width and the speaker being more "Thic". The aspect ratio of the top view of the speaker never changes
@@ -69,6 +69,8 @@ which is great however this cant be said the same about the speaker shape when "
 Lots of time went into testing how the Speaker screen works itself with the Javascript and using -hideClass/addClass- or .attr. I spent alot of timw with the wesbite open to click and
 check that every button works and sents the right request from the buttons to the items. I wanted the HTML to be very simple white the CSS and JavaScript did all the work of the website. 
 so most Divs have mulitple classes to show and hide them or even change how they look to give the idea that the user is interacting with a device through a device. 
+
+
 
 ## Deployment
 
